@@ -31,8 +31,8 @@ To start my career as a SOC Analyst (L1), focusing on alert triage, log analysis
 - 📊 **[Log Analysis & Detection Notes](https://github.com/rohithbaggu56-dot/Log-Analysis-Detection-Notes)**  
   Windows & Linux log analysis focused on alert triage, suspicious activity identification, and IOC extraction
 
-- 🔍 **[Detection & Investigation Notes](https://github.com/yourusername/detection-notes)**  
-  Blue Team detection logic and attack behavior analysis
+- 🔍 **[Splunk SIEM Practice & Detection Lab](https://github.com/rohithbaggu56-dot/Splunk-SIEM-Practice-Notes/blob/main/README.md)**  
+  Hands-on practice with Splunk for SOC-style log analysis and detection using SSH, DNS, HTTP, and Cloudflare logs. Built searches, dashboards, and identified suspicious activity.
 
 
 ---
