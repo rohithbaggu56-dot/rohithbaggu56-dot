@@ -28,8 +28,8 @@ To start my career as a SOC Analyst (L1), focusing on alert triage, log analysis
 - 🎣 **[Phishing Analysis SOC Simulation Lab](https://github.com/rohithbaggu56-dot/Phishing-Analysis-SOC-Simulation-Lab)**  
  Practiced phishing investigation workflows using simulated email samples, focusing on indicator identification, triage, and escalation as performed in SOC environments
 
-- 📊 **[Log Analysis & Detection Notes](https://github.com/yourusername/log-analysis-notes)**  
-  Windows & Linux log analysis with alert triage mindset
+- 📊 **[Log Analysis & Detection Notes](https://github.com/rohithbaggu56-dot/Log-Analysis-Detection-Notes)**  
+  Windows & Linux log analysis focused on alert triage, suspicious activity identification, and IOC extraction
 
 - 🔍 **[Detection & Investigation Notes](https://github.com/yourusername/detection-notes)**  
   Blue Team detection logic and attack behavior analysis
