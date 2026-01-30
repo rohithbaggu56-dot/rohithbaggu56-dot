@@ -25,7 +25,7 @@ To start my career as a SOC Analyst (L1), focusing on alert triage, log analysis
 - 🏠 **[Home SOC Lab](https://github.com/rohithbaggu56-dot/Home-SOC-Lab-Detection-Log-Analysis)**  
  Built a multi-VM SOC lab for log analysis, SIEM monitoring, and basic network traffic investigation.
 
-- 🎣 **[Phishing Analysis SOC Simulation Lab](https://github.com/rohithbaggu56-dot/Phishing-Analysis-SOC-Simulation-La)**  
+- 🎣 **[Phishing Analysis SOC Simulation Lab](https://github.com/rohithbaggu56-dot/Phishing-Analysis-SOC-Simulation-Lab)**  
  Practiced phishing investigation workflows using simulated email samples, focusing on indicator identification, triage, and escalation as performed in SOC environments
 
 - 📊 **[Log Analysis & Detection Notes](https://github.com/yourusername/log-analysis-notes)**  
