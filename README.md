@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Rohit
+# 👋 Hi, I'm Rohith
 Thanks for visiting my profile 🙂
 
 I’m a cybersecurity learner focused on SOC and Blue Team, with hands-on experience in home labs, SIEM, log analysis, phishing investigations, and basic network traffic analysis.
@@ -65,8 +65,8 @@ To start my career as a SOC Analyst (L1), focusing on alert triage, log analysis
 ---
 SOC workflow exposure, alert investigation basics  
 ## 🧪 Labs & Platforms
-- [TryHackMe](https://tryhackme.com) - SOC fundamentals, phishing analysis, log analysis, alert triage   
-- [Let’s Defend](https://letsdefend.io) - Hands-on exposure to SOC alerts and investigation flow  
+- [TryHackMe](https://tryhackme.com/p/rohithbaggu56) - SOC fundamentals, phishing analysis, log analysis, alert triage   
+- [Let’s Defend](https://app.letsdefend.io/homepage) - Hands-on exposure to SOC alerts and investigation flow  
 
 
 ---
