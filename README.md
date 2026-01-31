@@ -15,7 +15,7 @@ To start my career as a SOC Analyst (L1), focusing on alert triage, log analysis
 - Alert Triage & Incident Investigation  
 - Phishing Analysis  
 - Network Traffic Analysis
-- Networking Fundamentals (TCP/IP, DNS, HTTP)
+- Networking Fundamentals (OSI, TCP/IP, DNS, HTTP)
 - Windows & Linux Fundamentals for SOC  
 - MITRE ATT&CK Basics  
 
