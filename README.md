@@ -3,12 +3,12 @@ Thanks for visiting my profile 🙂
 
 I’m a cybersecurity learner focused on SOC and Blue Team, with hands-on experience in home labs, SIEM, log analysis, phishing investigations, and basic network traffic analysis.
 
----
+
 
 ## 🎯 Objective
 To start my career as a SOC Analyst (L1), focusing on alert triage, log analysis, phishing investigations, and continuous improvement in defensive security.
 
----
+
 
 ## 🛡️ Core Skills
 - SIEM & Log Analysis  
@@ -35,6 +35,11 @@ To start my career as a SOC Analyst (L1), focusing on alert triage, log analysis
 - 🔍 **[Splunk SIEM Practice & Detection Lab](https://github.com/rohithbaggu56-dot/Splunk-SIEM-Practice-Notes/blob/main/README.md)**  
   Hands-on practice with Splunk for SOC-style log analysis and detection using SSH, DNS, HTTP, and Cloudflare logs. Built searches, dashboards, and identified suspicious activity.
 
+- 🧾 **[Incident Investigation Report](https://github.com/rohithbaggu56-dot/Incident-Investigation-Report)**  
+  Documented a SOC-style incident investigation by analyzing logs, alerts, and timelines to understand attacker behavior, identify root cause, and recommend remediation actions.
+
+- 🚨 **[SIEM Detection Use Cases](https://github.com/rohithbaggu56-dot/SIEM-Detection-Use-Case)**  
+  Created and documented SIEM detection use cases to explain why alerts exist, how they trigger, and how SOC analysts investigate them. Focused on detection logic, attacker behavior, and alert triage.
 
 ---
 
@@ -63,13 +68,13 @@ To start my career as a SOC Analyst (L1), focusing on alert triage, log analysis
 
 
 ---
-SOC workflow exposure, alert investigation basics  
+
 ## 🧪 Labs & Platforms
 - [TryHackMe](https://tryhackme.com/p/rohithbaggu56) - SOC fundamentals, phishing analysis, log analysis, alert triage   
 - [Let’s Defend](https://app.letsdefend.io/homepage) - Hands-on exposure to SOC alerts and investigation flow  
 
 
----
+
 
 ## 🎓 Certifications
 ![Microsoft Cybersecurity Analyst](https://img.shields.io/badge/Microsoft_Cybersecurity_Analyst-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
@@ -77,15 +82,15 @@ SOC workflow exposure, alert investigation basics
 ![TryHackMe SOC Level 1](https://img.shields.io/badge/TryHackMe-SOC_Level_1-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)
 
 
----
+
 
 ## 🚀 Goals
 - Land a **SOC Analyst (L1)** role  
 - Strengthen detection & investigation skills  
 - Grow into a strong **Blue Team professional**
 
----
 
+---
 ## 🌐 Connect with Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rohithbaggu)
