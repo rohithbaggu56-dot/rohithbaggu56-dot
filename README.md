@@ -26,6 +26,11 @@ To start my career as a SOC Analyst (L1), focusing on alert triage, log analysis
 - 🏠 **[Home SOC Lab](https://github.com/rohithbaggu56-dot/Home-SOC-Lab-Detection-Log-Analysis)**  
  Built a multi-VM SOC lab for log analysis, SIEM monitoring, and basic network traffic investigation.
 
+- 🔐 **[Wazuh SIEM – Hands-On SOC Lab (Windows & Linux)](https://github.com/rohithbaggu56-dot/Wazuh-SIEM-SOC-Hands-On-Lab/blob/main/README.md)**
+  Built and tested a multi-OS Wazuh lab to understand endpoint detection, file integrity monitoring (FIM), authentication events, and SOC-style troubleshooting.  
+  Focused on generating real system activity, identifying detection gaps, and fixing them through configuration and log analysis.  
+ 
+
 - 🎣 **[Phishing Analysis SOC Simulation Lab](https://github.com/rohithbaggu56-dot/Phishing-Analysis-SOC-Simulation-Lab)**  
  Practiced phishing investigation workflows using simulated email samples, focusing on indicator identification, triage, and escalation as performed in SOC environments
 
@@ -35,12 +40,14 @@ To start my career as a SOC Analyst (L1), focusing on alert triage, log analysis
 - 🔍 **[Splunk SIEM Practice & Detection Lab](https://github.com/rohithbaggu56-dot/Splunk-SIEM-Practice-Notes/blob/main/README.md)**  
   Hands-on practice with Splunk for SOC-style log analysis and detection using SSH, DNS, HTTP, and Cloudflare logs. Built searches, dashboards, and identified suspicious activity.
 
+  ↳ 📘 **[SIEM Detection Use Cases](https://github.com/rohithbaggu56-dot/SIEM-Detection-Use-Case)**   
+  Documented detection use cases derived from Splunk investigations to explain why alerts trigger, how detection logic works, and how SOC analysts investigate them.  
+  
+
 - 🧾 **[Incident Investigation Report](https://github.com/rohithbaggu56-dot/Incident-Investigation-Report)**  
   Documented a SOC-style incident investigation by analyzing logs, alerts, and timelines to understand attacker behavior, identify root cause, and recommend remediation actions.
 
-- 🚨 **[SIEM Detection Use Cases](https://github.com/rohithbaggu56-dot/SIEM-Detection-Use-Case)**  
-  Created and documented SIEM detection use cases to explain why alerts exist, how they trigger, and how SOC analysts investigate them. Focused on detection logic, attacker behavior, and alert triage.
-
+ 
 ---
 
 ## 🛠️ Tools & Technologies
