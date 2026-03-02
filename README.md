@@ -1,8 +1,7 @@
 # 👋 Hi, I'm Rohith
 Thanks for visiting my profile 🙂
 
-I’m a cybersecurity learner focused on SOC and Blue Team, with hands-on experience in home labs, SIEM, log analysis, phishing investigations, and basic network traffic analysis.
-
+I’m a cybersecurity learner focused on SOC and Blue Team operations, building practical skills through hands-on home labs involving SIEM monitoring, log analysis, phishing investigations, and network traffic analysis.
 
 
 ## 🎯 Objective
@@ -11,19 +10,22 @@ To start my career as a SOC Analyst (L1), focusing on alert triage, log analysis
 
 
 ## 🛡️ Core Skills
-- SIEM & Log Analysis  
-- Alert Triage & Incident Investigation  
-- Phishing Analysis  
-- Network Traffic Analysis
-- Networking Fundamentals (OSI, TCP/IP, DNS, HTTP)
-- Windows & Linux Fundamentals for SOC  
-- MITRE ATT&CK Basics  
+
+- SIEM Monitoring & Log Analysis (Splunk, Wazuh)
+- Security Event Monitoring & Detection Analysis
+- Alert Triage & Incident Investigation
+- Phishing Email Analysis & IOC Identification
+- Network Traffic Analysis (Wireshark, DNS & HTTP logs)
+- Security Detection & Threat Identification
+- Networking Concepts (OSI, TCP/IP, DNS, HTTP)
+- Windows & Linux Security Log Analysis
+- MITRE ATT&CK Mapping & Attack Understanding
 
 ---
 
 ## 🧑‍💻 Projects 
 
-- 🏠 **[SOC-Home-Lab](https://github.com/rohithbaggu56-dot/Home-SOC-Lab-Detection-Log-Analysis)**  
+- 🏠 **[SOC-Home-Lab-BlueTam](https://github.com/rohithbaggu56-dot/Home-SOC-Lab-Detection-Log-Analysis)**  
  Built a multi-VM SOC lab for log analysis, SIEM monitoring, and basic network traffic investigation.
 
 - 🔐 **[Wazuh SIEM – Hands-On SOC Lab (Windows & Linux)](https://github.com/rohithbaggu56-dot/Wazuh-SIEM-SOC-Hands-On-Lab/blob/main/README.md)**  
@@ -54,9 +56,11 @@ To start my career as a SOC Analyst (L1), focusing on alert triage, log analysis
 ![Elastic](https://img.shields.io/badge/Elastic-005571?style=for-the-badge&logo=elastic&logoColor=white)
 ![Wazuh](https://img.shields.io/badge/Wazuh-005DAC?style=for-the-badge&logo=wazuh&logoColor=white)
 
-### 🌐 Network Analysis
+### 🌐 🌐 Network & Firewall
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
 ![tcpdump](https://img.shields.io/badge/tcpdump-yellow?style=for-the-badge)
+![pfSense](https://img.shields.io/badge/pfSense-Firewall-212121?style=for-the-badge&logo=pfsense&logoColor=white)
+
 
 ### 🖥️ Operating Systems
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
@@ -69,6 +73,7 @@ To start my career as a SOC Analyst (L1), focusing on alert triage, log analysis
 ![Sysmon](https://img.shields.io/badge/Sysmon-orange?style=for-the-badge)
 ![Linux_Log_Analysis](https://img.shields.io/badge/Linux_Log_Analysis-333333?style=for-the-badge)
 ![Process_Monitoring](https://img.shields.io/badge/Process_Monitoring-4CAF50?style=for-the-badge)
+![AI Log Triage](https://img.shields.io/badge/AI_Log_Triage-SOC_Assistant-7B61FF?style=for-the-badge)
 
 
 ---
