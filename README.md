@@ -23,7 +23,7 @@ To start my career as a SOC Analyst (L1), focusing on alert triage, log analysis
 
 ## 🧑‍💻 Projects 
 
-- 🏠 **[Home SOC Lab](https://github.com/rohithbaggu56-dot/Home-SOC-Lab-Detection-Log-Analysis)**  
+- 🏠 **[SOC-Home-Lab](https://github.com/rohithbaggu56-dot/Home-SOC-Lab-Detection-Log-Analysis)**  
  Built a multi-VM SOC lab for log analysis, SIEM monitoring, and basic network traffic investigation.
 
 - 🔐 **[Wazuh SIEM – Hands-On SOC Lab (Windows & Linux)](https://github.com/rohithbaggu56-dot/Wazuh-SIEM-SOC-Hands-On-Lab/blob/main/README.md)**  
