@@ -1,9 +1,10 @@
 # 👋 Hi, I'm Rohith Baggu
 
-I'm a SOC Analyst (L1) who learns by doing. My home lab runs live attack simulations against real machines  brute force, malware drops, web application attacks and I detect, investigate, and document everything the way a real SOC workflow demands.
+I'm a SOC Analyst (L1) who learns by doing. My home lab runs live attack simulations against real machines, brute force, malware drops, and web application attacks, and I detect, investigate, and document everything the way a real SOC workflow demands.
 
-Currently looking for SOC Analyst (L1) or Security Analyst roles.
+Currently looking for SOC Analyst (L1)/Security Analyst roles.
 
+---
 
 ## 🎯 Objective
 
@@ -41,18 +42,18 @@ My main lab environment. Three VMs (Windows 10, Ubuntu, Kali Linux) running Wazu
 
 ---
 
-### 🔐 Wazuh SIEM — Hands-On Lab (Windows & Linux)
+### 🔐 Wazuh SIEM – Hands-On Lab (Windows & Linux)
 
-Full Wazuh deployment across Windows and Linux with Sysmon integration, VirusTotal API active response pipeline, and custom rule authoring.
+Full Wazuh deployment across Windows and Linux with Sysmon integration and VirusTotal API active response pipeline.
 
 - 🔴 Deployed Sysmon on Windows 10 with a custom XML config to capture process creation, network connections, and file drop events
-- 🔴 Built and configured the VirusTotal API active response pipeline in Wazuh — wrote remove-threat.sh to automatically delete files on positive malware verdict, and authored a custom suppression rule in local_rules.xml to eliminate Edge false positives without reducing detection coverage
+- 🔴 Configured the VirusTotal API active response pipeline in Wazuh. Wrote remove-threat.sh to automatically delete files on a positive malware verdict
 - 🔴 Correlated Windows Event IDs 4625, 4624, and 4648 to detect failed logon sequences and flag lateral movement patterns
-- 📌 MITRE: T1078 Valid Accounts · T1105 Ingress Tool Transfer · T1059 Command & Scripting Interpreter
+- 📌 MITRE: `T1078` Valid Accounts · `T1105` Ingress Tool Transfer · `T1059` Command & Scripting Interpreter
 
 ---
 
-### 🎣 Phishing Analysis — SOC Simulation Lab
+### 🎣 Phishing Analysis – SOC Simulation Lab
 
 Worked through phishing triage the way it happens in a real SOC: alert intake, header analysis, IOC extraction, tool lookups, verdict, escalation.
 
@@ -75,7 +76,7 @@ Raw Windows and Linux log analysis focused on reading event data directly and id
 
 ---
 
-### 🔍 Splunk SIEM — Detection Lab
+### 🔍 Splunk SIEM – Detection Lab
 
 Log analysis in Splunk using SSH, DNS, HTTP, and Cloudflare data to practice writing real detection queries and building dashboards.
 
@@ -144,9 +145,9 @@ End-to-end incident documentation following a SOC investigation workflow, from f
 
 ## 🧪 Labs & Platforms
 
-- [TryHackMe](https://tryhackme.com/p/rohithbaggu56) — SOC Level 1 path, phishing analysis, log analysis, alert triage
-- [LetsDefend](https://app.letsdefend.io/homepage) — Investigated live SOC alerts covering SQL injection, RDP brute force, malicious PowerShell, CVE exploitation, and unauthorized VPN access
-- Forage — Completed 7 cybersecurity job simulations including Commonwealth Bank SOC investigation
+- [TryHackMe](https://tryhackme.com/p/rohithbaggu56)
+- [LetsDefend](https://app.letsdefend.io/homepage)
+- Forage
 
 ---
 
