@@ -1,14 +1,13 @@
 # 👋 Hi, I'm Rohith Baggu
 
-I'm a **SOC Analyst (L1)** building real-world detection and incident response skills through hands-on home labs — running live attack simulations, SIEM configuration, malware detection pipelines, and documented investigations across Windows and Linux environments.
+I'm a SOC Analyst (L1) who learns by doing. My home lab runs live attack simulations against real machines  brute force, malware drops, web application attacks and I detect, investigate, and document everything the way a real SOC workflow demands.
 
-> 🔍 Actively seeking SOC Analyst (L1) / Security Analyst roles in India.
+Currently looking for SOC Analyst (L1) or Security Analyst roles.
 
----
 
 ## 🎯 Objective
 
-To join a SOC team as a Tier 1 Analyst and apply hands-on experience in alert triage, log analysis, threat detection, and incident documentation — contributing to a stronger defensive security posture from day one.
+To join a SOC team as a Tier 1 Analyst and contribute from day one using hands-on experience in alert triage, log analysis, SIEM rule writing, and incident documentation built entirely through self-driven lab work.
 
 ---
 
@@ -27,75 +26,74 @@ To join a SOC team as a Tier 1 Analyst and apply hands-on experience in alert tr
 
 ## 🧑‍💻 Projects
 
-> All projects include real attack simulations, documented findings, IOCs, and MITRE ATT&CK mappings.
+All projects involve real attack simulations run in my home lab, with documented findings, IOCs, and MITRE ATT&CK mappings.
 
----
 
-### 🏠 SOC Home Lab — Full Detection & Response Environment
+### 🏠 SOC Home Lab – Full Detection & Response Environment
 
-My primary lab — a multi-VM environment (Windows 10, Ubuntu, Kali Linux) running Wazuh SIEM with Sysmon, VirusTotal API integration, and active response automation.
+My main lab environment. Three VMs (Windows 10, Ubuntu, Kali Linux) running Wazuh SIEM with Sysmon, VirusTotal API integration, and automated active response.
 
-- 🔴 Simulated SSH & RDP brute force using Hydra — Wazuh active response auto-blocked attacker IP after threshold breach
-- 🔴 Detected malicious file drop via Sysmon Event ID 11 — VirusTotal API returned positive verdict — `remove-threat.sh` auto-deleted file within 60 seconds
-- 🔴 Tuned false positive suppression for Microsoft Edge (T1105) using custom `local_rules.xml` — improved alert fidelity without losing detection coverage
-- 🔴 Deployed ModSecurity WAF with DVWA — simulated SQLi and XSS attacks, confirmed WAF blocking with rule-level logging
+- 🔴 Ran SSH and RDP brute force attacks using Hydra. Wazuh detected the threshold breach and automatically blocked the attacker IP through active response
+- 🔴 Dropped a test malware file onto the Windows machine. Sysmon Event ID 11 caught the file creation, VirusTotal flagged it as malicious, and remove-threat.sh deleted it within 60 seconds
+- 🔴 Microsoft Edge was triggering T1105 alerts as false positives. Wrote a custom local_rules.xml suppression rule to eliminate the noise without reducing detection coverage
+- 🔴 Set up ModSecurity WAF in front of DVWA and simulated SQL injection and XSS attacks. Confirmed WAF blocking with rule-level logging on each block
 - 📌 MITRE: `T1110` Brute Force · `T1105` Ingress Tool Transfer · `T1059` Command & Scripting Interpreter · `T1190` Exploit Public-Facing Application
 
 ---
 
-### 🔐 Wazuh SIEM — Hands-On SOC Lab (Windows & Linux)
+### 🔐 Wazuh SIEM — Hands-On Lab (Windows & Linux)
 
-End-to-end Wazuh deployment across Windows and Linux endpoints with Sysmon integration and custom detection rules.
+Full Wazuh deployment across Windows and Linux with Sysmon integration, VirusTotal API active response pipeline, and custom rule authoring.
 
-- 🔴 Configured Sysmon on Windows 10 with custom XML ruleset — detected process creation, network connections, and file drops
-- 🔴 Built custom Wazuh rules (IDs 554, 87105, 657, 553) for VirusTotal API active response pipeline
-- 🔴 Correlated Windows Event IDs 4625, 4624, 4648 to identify failed logon patterns and lateral movement indicators
-- 📌 MITRE: `T1078` Valid Accounts · `T1003` Credential Dumping · `T1105` Ingress Tool Transfer
+- 🔴 Deployed Sysmon on Windows 10 with a custom XML config to capture process creation, network connections, and file drop events
+- 🔴 Built and configured the VirusTotal API active response pipeline in Wazuh — wrote remove-threat.sh to automatically delete files on positive malware verdict, and authored a custom suppression rule in local_rules.xml to eliminate Edge false positives without reducing detection coverage
+- 🔴 Correlated Windows Event IDs 4625, 4624, and 4648 to detect failed logon sequences and flag lateral movement patterns
+- 📌 MITRE: T1078 Valid Accounts · T1105 Ingress Tool Transfer · T1059 Command & Scripting Interpreter
 
 ---
 
 ### 🎣 Phishing Analysis — SOC Simulation Lab
 
-SOC-style phishing triage workflow using simulated email samples — from initial alert to escalation decision.
+Worked through phishing triage the way it happens in a real SOC: alert intake, header analysis, IOC extraction, tool lookups, verdict, escalation.
 
-- 🔴 Identified spoofed sender domain via header analysis — detected mismatched Reply-To and Return-Path fields
-- 🔴 Extracted malicious URL — confirmed via VirusTotal and urlscan.io — redirected to credential harvesting page
-- 🔴 Checked sender IP reputation via AbuseIPDB — flagged as known malicious source
-- 🔴 Analyzed email headers using MXToolbox — confirmed SPF/DKIM failure indicating spoofed origin
+- 🔴 Spotted a spoofed sender domain by checking email headers. Reply-To and Return-Path did not match the claimed sender
+- 🔴 Pulled the embedded URL, ran it through VirusTotal and urlscan.io, and confirmed it redirected to a credential harvesting page
+- 🔴 Checked the sender IP on AbuseIPDB and it came back flagged as a known malicious source
+- 🔴 Ran the headers through MXToolbox and confirmed SPF and DKIM both failed, indicating the email was spoofed
 - 📌 MITRE: `T1566.001` Spearphishing Attachment · `T1566.002` Spearphishing Link
 
 ---
 
 ### 📊 Log Analysis & Detection
 
-Structured analysis of Windows and Linux logs focused on identifying suspicious activity from raw log data.
+Raw Windows and Linux log analysis focused on reading event data directly and identifying what is suspicious without relying on SIEM alerts.
 
-- 🔴 Identified failed logon patterns across Windows Event IDs 4625, 4740 — flagged account lockout as brute force indicator
-- 🔴 Analyzed Linux `auth.log` for sudo escalation attempts and SSH login anomalies
-- 🔴 Documented IOC extraction workflow: event ID → log field → indicator → classification
+- 🔴 Found repeated Event ID 4625 failures followed by a 4740 account lockout and flagged it as a brute force pattern
+- 🔴 Went through Linux auth.log manually and identified sudo escalation attempts alongside abnormal SSH login activity
+- 🔴 Built a personal IOC extraction workflow: event ID to log field to indicator to classification
 - 📌 MITRE: `T1110.001` Password Guessing · `T1078` Valid Accounts
 
 ---
 
 ### 🔍 Splunk SIEM — Detection Lab
 
-Hands-on Splunk log analysis using SSH, DNS, HTTP, and Cloudflare logs to simulate SOC detection workflows.
+Log analysis in Splunk using SSH, DNS, HTTP, and Cloudflare data to practice writing real detection queries and building dashboards.
 
-- 🔴 Wrote SPL queries to detect SSH brute force: `index=main sourcetype=linux_secure "Failed password" | stats count by src_ip | where count > 10`
-- 🔴 Identified high-frequency DNS queries — flagged as potential C2 beaconing pattern
-- 🔴 Built Splunk dashboard for failed authentication monitoring across multiple log sources
+- 🔴 Wrote SPL to catch SSH brute force: `index=main sourcetype=linux_secure "Failed password" | stats count by src_ip | where count > 10`
+- 🔴 Noticed a source IP sending abnormally high DNS query volume and flagged it as a potential C2 beaconing pattern
+- 🔴 Built a dashboard tracking failed authentication events across multiple log sources for ongoing monitoring
 - 📌 MITRE: `T1110` Brute Force · `T1071.004` DNS · `T1046` Network Service Scanning
 
 ---
 
 ### 🧾 Incident Investigation Report
 
-SOC-style incident report documenting full investigation lifecycle — from alert intake to root cause and remediation.
+End-to-end incident documentation following a SOC investigation workflow, from first alert to root cause and remediation.
 
-- 🔴 Correlated alerts across SIEM, endpoint logs, and network traffic to reconstruct attacker timeline
-- 🔴 Identified root cause, documented IOCs with hash values, IPs, and file paths
-- 🔴 Produced remediation recommendations following SOC escalation workflow
-- 📌 MITRE: ATT&CK techniques mapped per finding across all Kill Chain stages
+- 🔴 Pulled correlated alerts from SIEM, endpoint logs, and network traffic and reconstructed the attacker timeline
+- 🔴 Documented all IOCs including file hashes, IP addresses, and file paths in a structured report
+- 🔴 Wrote remediation recommendations following the escalation workflow a real Tier 1 analyst would use
+- 📌 MITRE: ATT&CK techniques mapped per finding across Kill Chain stages
 
 ---
 
@@ -146,9 +144,9 @@ SOC-style incident report documenting full investigation lifecycle — from aler
 
 ## 🧪 Labs & Platforms
 
-- [TryHackMe](https://tryhackme.com/p/rohithbaggu56) — SOC Level 1, phishing analysis, log analysis, alert triage
-- [LetsDefend](https://app.letsdefend.io/homepage) — Live SOC alerts: SQL injection, RDP brute force, malicious PowerShell, CVE exploitation, unauthorized VPN access
-- [Forage](https://www.theforage.com) — Completed 7 cybersecurity job simulations including Commonwealth Bank SOC investigation
+- [TryHackMe](https://tryhackme.com/p/rohithbaggu56) — SOC Level 1 path, phishing analysis, log analysis, alert triage
+- [LetsDefend](https://app.letsdefend.io/homepage) — Investigated live SOC alerts covering SQL injection, RDP brute force, malicious PowerShell, CVE exploitation, and unauthorized VPN access
+- Forage — Completed 7 cybersecurity job simulations including Commonwealth Bank SOC investigation
 
 ---
 
