@@ -100,7 +100,7 @@ End-to-end incident documentation following a SOC investigation workflow, from f
 
 Deployed pfSense as the network gateway for the entire SOC lab, controlling traffic between all VMs and generating firewall logs showing real blocked connection attempts.
 
-- 🔴 Configured LAN firewall rules and applied a block rule targeting the Kali attacker machine (192.168.1.101). Verified the block worked — ping went from 0% to 100% packet loss after rule was applied
+- 🔴 Configured LAN firewall rules and applied a block rule targeting the Kali attacker machine (192.168.1.101). Verified the block worked ping went from 0% to 100% packet loss after rule was applied
 - 🔴 Reviewed pfSense firewall logs and found 170 blocked connection attempts from Kali trying to reach external DNS (8.8.8.8) and the Wazuh manager port (1514) via TCP and ICMP
 - 🔴 Identified that the blocked TCP attempts were targeting port 1514, the Wazuh agent communication port, showing the attacker machine attempting to reach the SOC server directly
 - 📌 MITRE: `T1046` Network Service Scanning · `T1562.004` Disable or Modify System Firewall
