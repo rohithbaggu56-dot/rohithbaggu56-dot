@@ -83,8 +83,7 @@ Log analysis in Splunk using SSH, DNS, HTTP, and Cloudflare data to practice wri
 - 🔴 Wrote SPL to catch SSH brute force: `index=main sourcetype=linux_secure "Failed password" | stats count by src_ip | where count > 10`
 - 🔴 Noticed a source IP sending abnormally high DNS query volume and flagged it as a potential C2 beaconing pattern
 - 🔴 Built a dashboard tracking failed authentication events across multiple log sources for ongoing monitoring
-- 📌 MITRE: `T1110` Brute Force · `T1071.004` DNS · `T1046` Network Service Scanning
-
+- 📌 MITRE: `T1110` Brute Force · `T1071.004` DNS · 
 ---
 
 ### 🧾 Incident Investigation Report
