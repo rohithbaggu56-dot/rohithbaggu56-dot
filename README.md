@@ -220,7 +220,7 @@ Detection rules are how L1 analysts scale their attention. Good rules catch atta
 ![Google Cybersecurity Professional](https://img.shields.io/badge/Google%20Cybersecurity%20Professional-4285F4?style=flat&logo=google)
 ![Microsoft Cybersecurity Analyst](https://img.shields.io/badge/Microsoft%20Cybersecurity%20Analyst-0078D4?style=flat&logo=microsoft)
 ![TryHackMe SOC Level 1](https://img.shields.io/badge/TryHackMe%20SOC%20L1-212121?style=flat&logo=tryhackme)
-![IBM Ethical Hacking & Open Source Tools](https://img.shields.io/badge/IBM%20Ethical%20Hacking-054ADA?style=flat&logo=ibm)
+![IBM Ethical Hacking & Open Source Tools](https://img.shields.io/badge/IBM%20Ethical%20Hacking%20%26%20Open%20Source%20Tools-054ADA?style=flat&logo=ibm)
 
 **Active Learning:**
 - TryHackMe SOC Level 1 path (hands-on labs across Splunk, Wireshark, Snort, EDR tools)
@@ -285,8 +285,8 @@ Detection rules are how L1 analysts scale their attention. Good rules catch atta
 
 ## 💬 Let's Talk
 
-**LinkedIn:** [Rohith Baggu](https://linkedin.com/in/rohithbaggu56-dot)  
-**TryHackMe:** [rohithbaggu56-dot](https://tryhackme.com/p/rohithbaggu56-dot)
+**LinkedIn:** [Rohith Baggu](https://www.linkedin.com/in/rohithbaggu/)  
+**TryHackMe:** [Rohithbaggu56](https://tryhackme.com/p/rohithbaggu56)
 
 I'm actively hunting for SOC Analyst L1 / Security Analyst roles at:
 - Tier 1 IT firms (TCS, Wipro, Infosys, HCLTech, Tech Mahindra, Capgemini)
@@ -296,9 +296,3 @@ I'm actively hunting for SOC Analyst L1 / Security Analyst roles at:
 If you're hiring or know someone who is — let's connect.
 
 ---
-
-## 📊 Activity
-
-**147 contributions in the last year** — mostly investigation documentation, detection rule development, and lab build-outs.
-
-Check out the pinned repos above to see the work. Everything is hands-on, documented, and real.
