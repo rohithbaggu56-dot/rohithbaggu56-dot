@@ -1,4 +1,4 @@
-# 👋 Hi, I'm a SOC Analyst Who Learns by Doing
+# 👋 Hi, I'm Rohith Baggu — SOC Analyst | Real Attack Investigation
 
 I investigate real attacks. I build detection rules. I break things in labs and learn how to find them in production.
 
@@ -27,7 +27,7 @@ This methodology runs through every lab. Pick a repo and you'll see exactly this
 ### Real Attack Data (Actual Internet Threat Actors)
 
 <details>
-<summary><strong>Azure Honeypot – Windows RDP Exposed to the Internet</strong></summary>
+<summary><strong>🍯 Azure Honeypot – Windows RDP Exposed to the Internet</strong></summary>
 
 **What:** Intentionally exposed Windows Server 2022 VM to collect real attack traffic. No simulation — actual threat actors found the open RDP port within minutes.
 
@@ -51,7 +51,7 @@ This methodology runs through every lab. Pick a repo and you'll see exactly this
 </details>
 
 <details>
-<summary><strong>Splunk Investigation – 17,126 Failed Logins, Real Attackers</strong></summary>
+<summary><strong>📊 Splunk Investigation – 17,126 Failed Logins, Real Attackers</strong></summary>
 
 **What:** Monitored SSH authentication logs over 21 days. Real automated scanning tools (not simulated) hit the system from IPs across Argentina, China, Philippines, India, Japan, South Korea.
 
@@ -66,9 +66,9 @@ This methodology runs through every lab. Pick a repo and you'll see exactly this
 - Correlated failed attempts with successful logins to identify breaches
 - Validated suspicious IPs against AbuseIPDB and VirusTotal
 - Built a dashboard showing top attacking sources, failed login trends, and targeted accounts
-- Investigated post-compromise activity (process execution, command history) — found none, system was defended
+- Investigated post-compromise activity — found none, system was defended
 
-**Tools:** Splunk Enterprise | SPL (Search Processing Language) | Windows Security Event Logs | VirusTotal | AbuseIPDB  
+**Tools:** Splunk Enterprise | SPL | Windows Security Event Logs | VirusTotal | AbuseIPDB  
 **MITRE ATT&CK:** T1110 (Brute Force), T1110.003 (Password Spraying), T1078 (Valid Accounts)
 
 **Repo:** [SOC-Incident-Investigation-Splunk](https://github.com/rohithbaggu56-dot/SOC-Incident-Investigation-Splunk)
@@ -76,7 +76,7 @@ This methodology runs through every lab. Pick a repo and you'll see exactly this
 </details>
 
 <details>
-<summary><strong>RDP Brute Force Incident – Detection to Closure</strong></summary>
+<summary><strong>🎯 RDP Brute Force Incident – Detection to Closure</strong></summary>
 
 **What:** A real brute force alert fires in Sentinel. I investigate it end-to-end: validate the threat, check logs, verify with threat intel, contain it, and close it. This is an L1 analyst workflow.
 
@@ -90,7 +90,7 @@ This methodology runs through every lab. Pick a repo and you'll see exactly this
 
 **What This Demonstrates:**
 - Multi-layer validation (SIEM alert + IDS logs + threat intel + firewall rules agree)
-- Practical L1 mindset (validate before escalating, don't waste the Tier 2 team's time)
+- Practical L1 mindset (validate before escalating)
 - Incident containment and remediation
 - Understanding that logs tell different stories at different layers
 
@@ -101,12 +101,30 @@ This methodology runs through every lab. Pick a repo and you'll see exactly this
 
 </details>
 
+<details>
+<summary><strong>🔓 Elastic SIEM Lab – Real SSH Attacks Detected at Scale</strong></summary>
+
+**What:** Deployed Elasticsearch + Kibana on Azure. Collected SSH logs from an exposed Ubuntu VM. Real threat actors hit it within minutes.
+
+**Findings:**
+- External SSH brute force attempts from real internet traffic
+- Detected using authentication failure pattern analysis
+- Timeline reconstruction via Kibana dashboards
+- MITRE ATT&CK mapping and threat correlation
+
+**Tools:** Elastic Stack | Kibana | Filebeat | EQL queries  
+**MITRE ATT&CK:** T1110 (Brute Force), T1078 (Valid Accounts)
+
+**Repo:** [Elastic-SIEM-Lab-Azure-Cloud-Deployment](https://github.com/rohithbaggu56-dot/Elastic-SIEM-Lab-Azure-Cloud-Deployment)
+
+</details>
+
 ---
 
 ### Simulated Attack Labs (Under My Control)
 
 <details>
-<summary><strong>Sysmon Attack Investigation – Meterpreter Payload to Credential Theft</strong></summary>
+<summary><strong>🔴 Sysmon Attack Investigation – Meterpreter Payload to Credential Theft</strong></summary>
 
 **What:** Staged a complete attack chain on Windows 10. Delivered a Meterpreter reverse shell, established persistence, dumped credentials with Mimikatz. Goal: investigate every trace using only Sysmon event logs.
 
@@ -123,64 +141,46 @@ This methodology runs through every lab. Pick a repo and you'll see exactly this
 - Event ID 3 (Network connection) — Reverse shell callback to attacker IP
 - Event ID 1 (Process creation) — Parent-child relationships showing cmd.exe → backdoor creation
 - Event ID 22 (DNS query) — certutil reaching github.com (LOLBin exposed)
-- Event ID 1 (Masquerading) — Mimikatz renamed to notmimikatz.exe, but internal file metadata still readable
+- Event ID 1 (Masquerading) — Mimikatz renamed, but internal metadata still readable
 
 **The Insight:**
 You cannot hide what you are. Renaming a file changes the filename, not the PE header. Sysmon catches what Windows Event Viewer misses.
 
-**Tools:** Sysmon | Windows Event Viewer | Metasploit | Mimikatz | VirusTotal (hash validation)  
-**MITRE ATT&CK:** T1204 (User Execution), T1571 (Non-Standard Port), T1189 (Drive-by Compromise), T1136 (Create Account), T1053 (Scheduled Task), T1218 (LOLBin Abuse), T1202 (Indirect Command Execution), T1036 (Masquerading), T1003 (OS Credential Dumping)
+**Tools:** Sysmon | Windows Event Viewer | Metasploit | Mimikatz | VirusTotal  
+**MITRE ATT&CK:** T1204, T1571, T1189, T1136, T1053, T1218, T1202, T1036, T1003
 
 **Repo:** [Sysmon-attack-investigation-lab](https://github.com/rohithbaggu56-dot/Sysmon-attack-investigation-lab)
 
 </details>
 
 <details>
-<summary><strong>Suricata IDS + Sentinel Integration – Network Detection at Scale</strong></summary>
+<summary><strong>🛡️ Suricata IDS + Sentinel Integration – Network Detection at Scale</strong></summary>
 
-**What:** Deployed Suricata on Ubuntu to detect network attacks. Ran port scans, SSH brute force, and web application attacks from Kali Linux. All alerts flow to Microsoft Sentinel via syslog for investigation.
+**What:** Deployed Suricata on Ubuntu to detect network attacks. Ran port scans, SSH brute force, and web application attacks from Kali Linux. All alerts flow to Microsoft Sentinel via syslog.
 
 **Attacks Simulated & Detected:**
 - Port scanning (Nmap) → 29 Suricata alerts
 - SSH brute force (Hydra) → Custom detection rule fired
-- Web application attacks (LFI, SQL injection via curl) → ModSecurity WAF + Suricata rules triggered
+- Web application attacks (LFI, SQL injection) → ModSecurity WAF + Suricata rules triggered
 - HTTP reconnaissance → Emerging Threats ruleset caught it
 
 **What I Learned:**
 - IDS mode (watches, alerts) vs. IPS mode (blocks)
-- How SIEM and IDS complement each other (IDS catches what application logs miss)
+- How SIEM and IDS complement each other
 - Writing custom Suricata rules from packet analysis
 - Mapping raw alerts to MITRE ATT&CK techniques
 
-**Tools:** Suricata 7.x | Microsoft Sentinel | Azure Monitor Agent | Emerging Threats Ruleset | Kali Linux (attacker) | KQL  
+**Tools:** Suricata 7.x | Microsoft Sentinel | Azure Monitor Agent | Emerging Threats Ruleset | Kali Linux | KQL  
 **MITRE ATT&CK:** T1595 (Active Scanning), T1110 (Brute Force), T1190 (Exploit Public-Facing Application)
 
-**Repo:** [Suricata-and-Sentinel-integration](https://github.com/rohithbaggu56-dot/Suriata-and-Sentinel-integraion)
+**Repo:** [Suricata-and-Sentinel-integration](https://github.com/rohithbaggu56-dot/Suricata-and-Sentinel-integration)
 
 </details>
 
 <details>
-<summary><strong>Elastic SIEM Lab – Real SSH Attacks Detected at Scale</strong></summary>
+<summary><strong>🔍 KQL Detection Queries – Real Threat Hunting</strong></summary>
 
-**What:** Deployed Elasticsearch + Kibana on Azure. Collected SSH logs from an exposed Ubuntu VM. Real threat actors hit it within minutes. Investigated everything in Elastic.
-
-**Findings:**
-- External SSH brute force attempts (real internet traffic, not simulated)
-- Detected using basic authentication failure patterns
-- Timeline reconstruction via Kibana
-- MITRE ATT&CK mapping
-
-**Tools:** Elastic Stack | Kibana | Filebeat | KQL-style queries  
-**MITRE ATT&CK:** T1110 (Brute Force), T1078 (Valid Accounts)
-
-**Repo:** [Elastic-SIEM-Lab-Azure-Cloud-Deployment](https://github.com/rohithbaggu56-dot/Elastic-SIEM-Lab-Azure-Cloud-Deployment)
-
-</details>
-
-<details>
-<summary><strong>KQL Practice – Detection Queries from Scratch</strong></summary>
-
-**What:** Wrote real detection queries in Microsoft Sentinel's KQL language. Covers authentication threats, endpoint visibility, and network connections.
+**What:** Wrote detection queries in Microsoft Sentinel's KQL language. Covers authentication threats, endpoint visibility, and network connections.
 
 **Queries Included:**
 - Brute force detection (Event ID 4625 correlation)
@@ -190,7 +190,7 @@ You cannot hide what you are. Renaming a file changes the filename, not the PE h
 - Failed login aggregation by account and IP
 
 **Why This Matters:**
-Detection rules are how L1 analysts scale their attention. Good rules catch attacks automatically; bad rules create alert fatigue. This lab shows I can write both.
+Detection rules are how L1 analysts scale their attention. Good rules catch attacks automatically; bad rules create alert fatigue.
 
 **Tools:** Microsoft Sentinel | KQL | Log Analytics Workspace
 
@@ -199,72 +199,107 @@ Detection rules are how L1 analysts scale their attention. Good rules catch atta
 </details>
 
 ---
+### 🧰 Tools & Technologies
 
-## 🛠️ Tools & Technologies
+**SIEM Platforms**  
+![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat&logo=splunk)
+![Elastic Stack](https://img.shields.io/badge/Elastic%20Stack-005571?style=flat&logo=elastic)
+![Wazuh](https://img.shields.io/badge/Wazuh-4A90E2?style=flat&logo=wazuh)
+![Microsoft Sentinel](https://img.shields.io/badge/Microsoft%20Sentinel-0078D4?style=flat&logo=microsoft)
 
-| Category | Tools |
-|----------|-------|
-| **SIEM Platforms** | ![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk) ![Elastic](https://img.shields.io/badge/Elastic-005571?style=flat-square&logo=elastic) ![Wazuh](https://img.shields.io/badge/Wazuh-005DA5?style=flat-square&logo=wazuh) |
-| **Cloud & Detection** | ![Microsoft Sentinel](https://img.shields.io/badge/Microsoft%20Sentinel-0078D4?style=flat-square&logo=microsoft-azure) ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoft-azure) |
-| **Network & IDS** | ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark) ![Suricata](https://img.shields.io/badge/Suricata-EF3B2D?style=flat-square&logo=suricata) ![Nmap](https://img.shields.io/badge/Nmap-35BF5C?style=flat-square&logo=nmap) ![pfSense](https://img.shields.io/badge/pfSense-212121?style=flat-square&logo=pfsense) |
-| **Endpoint & Logs** | ![Sysmon](https://img.shields.io/badge/Sysmon-0078D4?style=flat-square&logo=windows) ![Windows Event Log](https://img.shields.io/badge/Windows%20Event%20Log-0078D4?style=flat-square&logo=windows) ![Linux Log Analysis](https://img.shields.io/badge/Linux%20Logs-FCC624?style=flat-square&logo=linux) |
-| **Threat Intelligence** | ![VirusTotal](https://img.shields.io/badge/VirusTotal-394EFF?style=flat-square&logo=virustotal) ![AbuseIPDB](https://img.shields.io/badge/AbuseIPDB-FF6B6B?style=flat-square) ![URLScan.io](https://img.shields.io/badge/URLScan-FF6B6B?style=flat-square) |
-| **Frameworks & Methods** | ![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-FF6B35?style=flat-square) ![Cyber Kill Chain](https://img.shields.io/badge/Cyber%20Kill%20Chain-212121?style=flat-square) ![Pyramid of Pain](https://img.shields.io/badge/Pyramid%20of%20Pain-FF6B35?style=flat-square) ![NIST CSF](https://img.shields.io/badge/NIST%20CSF-0078D4?style=flat-square) |
-| **Operating Systems** | ![Windows](https://img.shields.io/badge/Windows-0078D4?style=flat-square&logo=windows) ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu) ![Kali Linux](https://img.shields.io/badge/Kali%20Linux-557C94?style=flat-square&logo=kalilinux) |
-| **Web & Database** | ![ModSecurity WAF](https://img.shields.io/badge/ModSecurity-000000?style=flat-square) ![DVWA](https://img.shields.io/badge/DVWA-FF6B6B?style=flat-square) |
+**Cloud & Detection**  
+![Microsoft Azure](https://img.shields.io/badge/Microsoft%20Azure-0089D6?style=flat&logo=microsoftazure)
+![Azure Monitor](https://img.shields.io/badge/Azure%20Monitor-0078D4?style=flat&logo=microsoft)
+![Log Analytics](https://img.shields.io/badge/Log%20Analytics-0078D4?style=flat&logo=microsoft)
+![Azure NSG](https://img.shields.io/badge/Azure%20NSG-0078D4?style=flat&logo=microsoft)
+
+**Network & IDS**  
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat&logo=wireshark)
+![Suricata](https://img.shields.io/badge/Suricata-E34F26?style=flat&logo=suricata)
+![Nmap](https://img.shields.io/badge/Nmap-4682B4?style=flat&logo=nmap)
+![pfSense](https://img.shields.io/badge/pfSense-212121?style=flat&logo=pfsense)
+![ModSecurity](https://img.shields.io/badge/ModSecurity-FF0000?style=flat&logo=apache)
+
+**Endpoint & Logs**  
+![Sysmon](https://img.shields.io/badge/Sysmon-0078D4?style=flat&logo=windows)
+![Windows Event Logs](https://img.shields.io/badge/Windows%20Event%20Logs-0078D4?style=flat&logo=windows)
+![Linux Logs](https://img.shields.io/badge/Linux%20Logs-FCC624?style=flat&logo=linux)
+
+**Threat Intelligence**  
+![VirusTotal](https://img.shields.io/badge/VirusTotal-394EFF?style=flat&logo=virustotal)
+![AbuseIPDB](https://img.shields.io/badge/AbuseIPDB-FF0000?style=flat&logo=shield)
+![urlscan.io](https://img.shields.io/badge/urlscan.io-00BFFF?style=flat&logo=internetexplorer)
+![MXToolbox](https://img.shields.io/badge/MXToolbox-FF6600?style=flat&logo=toolbox)
+
+**Frameworks & Methods**  
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-FF0000?style=flat&logo=mitre)
+![Cyber Kill Chain](https://img.shields.io/badge/Cyber%20Kill%20Chain-000000?style=flat&logo=lock)
+![Pyramid of Pain](https://img.shields.io/badge/Pyramid%20of%20Pain-8B0000?style=flat&logo=security)
+![NIST CSF](https://img.shields.io/badge/NIST%20CSF-003366?style=flat&logo=gov)
 
 ---
 
-## 📚 Certifications & Training
+### 📜 Certifications
 
 ![Google Cybersecurity Professional](https://img.shields.io/badge/Google%20Cybersecurity%20Professional-4285F4?style=flat&logo=google)
 ![Microsoft Cybersecurity Analyst](https://img.shields.io/badge/Microsoft%20Cybersecurity%20Analyst-0078D4?style=flat&logo=microsoft)
-![TryHackMe SOC Level 1](https://img.shields.io/badge/TryHackMe%20SOC%20L1-212121?style=flat&logo=tryhackme)
+![TryHackMe SOC Level 1](https://img.shields.io/badge/TryHackMe%20SOC%20Level%201-2E2E2E?style=flat&logo=tryhackme)
 ![IBM Ethical Hacking & Open Source Tools](https://img.shields.io/badge/IBM%20Ethical%20Hacking%20%26%20Open%20Source%20Tools-054ADA?style=flat&logo=ibm)
 
-**Active Learning:**
-- TryHackMe SOC Level 1 path (hands-on labs across Splunk, Wireshark, Snort, EDR tools)
-- Let's Defend (blue team incident response simulations)
-- Commonwealth Bank Forage (SOC analyst job simulation)
+
+
+---
+
+## 🔬 Currently Learning
+
+**TryHackMe SOC Level 1 Path:**
+- Hands-on modules: Wireshark, Splunk, Elastic, EDR tools, incident response
+- Focus: Detection rules, log analysis, incident triage
+- Status: Actively completing rooms
+
+**Let's Defend:**
+- Blue team incident response scenarios
+- Focus: Real-world SOC workflow simulation
+
+**Completed:**
+- Commonwealth Bank Forage (SOC analyst job simulation) ✅
 
 ---
 
 ## 📂 All Repositories
 
-**Pinned (Start Here):**
-- [Azure-Honeypot-SOC-Lab](https://github.com/rohithbaggu56-dot/Azure-Honeypot-SOC-Lab) — Real attack data, custom detection rules, incident investigation
-- [SOC-Home-Lab-BlueTeam](https://github.com/rohithbaggu56-dot/SOC-Home-Lab-BlueTeam) — Complete 3-VM home lab with Wazuh, Splunk, pfSense
-- [Suricata-and-Sentinel-integration](https://github.com/rohithbaggu56-dot/Suriata-and-Sentinel-integraion) — IDS → SIEM pipeline, real attacks, custom rules
-- [Microsoft-Sentinel-KQL-Sysmon-Lab](https://github.com/rohithbaggu56-dot/Microsoft-Sentinel-KQL-Sysmon-Lab) — Detection queries, Sysmon integration, authentication analysis
-
-**By Investigation Type:**
+<details>
+<summary><strong>View all 16 repositories (Click to Expand)</strong></summary>
 
 **Real Attack Data:**
-- [Azure-Honeypot-SOC-Lab](https://github.com/rohithbaggu56-dot/Azure-Honeypot-SOC-Lab)
-- [SOC-Incident-Investigation-Splunk](https://github.com/rohithbaggu56-dot/SOC-Incident-Investigation-Splunk)
-- [SOC-Workflow-RDP-Brute-Force-Suricata-Sentinel](https://github.com/rohithbaggu56-dot/SOC-Workflow-RDP-Brute-Force-Suricata-Sentinel)
-- [Elastic-SIEM-Lab-Azure-Cloud-Deployment](https://github.com/rohithbaggu56-dot/Elastic-SIEM-Lab-Azure-Cloud-Deployment)
+- [Azure-Honeypot-SOC-Lab](https://github.com/rohithbaggu56-dot/Azure-Honeypot-SOC-Lab) — 3,400+ real RDP logins, custom detection rules
+- [SOC-Incident-Investigation-Splunk](https://github.com/rohithbaggu56-dot/SOC-Incident-Investigation-Splunk) — 17,126 failed logins, threat validation
+- [SOC-Workflow-RDP-Brute-Force-Suricata-Sentinel](https://github.com/rohithbaggu56-dot/SOC-Workflow-RDP-Brute-Force-Suricata-Sentinel) — Alert to closure workflow
+- [Elastic-SIEM-Lab-Azure-Cloud-Deployment](https://github.com/rohithbaggu56-dot/Elastic-SIEM-Lab-Azure-Cloud-Deployment) — Real SSH attacks, Kibana dashboards
 
 **Simulated Attacks (Controlled Lab):**
-- [Sysmon-attack-investigation-lab](https://github.com/rohithbaggu56-dot/Sysmon-attack-investigation-lab)
-- [SOC-Home-Lab-BlueTeam](https://github.com/rohithbaggu56-dot/SOC-Home-Lab-BlueTeam)
-- [Wazuh-SIEM-SOC-Hands-On-Lab](https://github.com/rohithbaggu56-dot/Wazuh-SIEM-SOC-Hands-On-Lab)
-- [ModSecurity-WAF-DVWA-Lab](https://github.com/rohithbaggu56-dot/ModSecurity-WAF-DVWA-Lab)
+- [Sysmon-attack-investigation-lab](https://github.com/rohithbaggu56-dot/Sysmon-attack-investigation-lab) — Full attack chain from payload to credential dumping
+- [SOC-Home-Lab-BlueTeam](https://github.com/rohithbaggu56-dot/SOC-Home-Lab-BlueTeam) — 3-VM home lab with Wazuh, Splunk, pfSense
+- [Wazuh-SIEM-SOC-Hands-On-Lab](https://github.com/rohithbaggu56-dot/Wazuh-SIEM-SOC-Hands-On-Lab) — Windows + Linux agent deployment, VirusTotal integration
+- [ModSecurity-WAF-DVWA-Lab](https://github.com/rohithbaggu56-dot/ModSecurity-WAF-DVWA-Lab) — Web attack detection, WAF rule testing
 
 **Detection & Analysis:**
-- [Microsoft-Sentinel-KQL-Sysmon-Lab](https://github.com/rohithbaggu56-dot/Microsoft-Sentinel-KQL-Sysmon-Lab)
-- [Incident-Investigation-Report](https://github.com/rohithbaggu56-dot/Incident-Investigation-Report)
-- [Log-Analysis-Detection-Notes](https://github.com/rohithbaggu56-dot/Log-Analysis-Detection-Notes)
-- [Splunk-SIEM-Practice-Notes](https://github.com/rohithbaggu56-dot/Splunk-SIEM-Practice-Notes)
+- [Microsoft-Sentinel-KQL-Sysmon-Lab](https://github.com/rohithbaggu56-dot/Microsoft-Sentinel-KQL-Sysmon-Lab) — KQL queries, Sysmon integration, authentication analysis
+- [Suricata-and-Sentinel-integration](https://github.com/rohithbaggu56-dot/Suricata-and-Sentinel-integration) — IDS → SIEM pipeline, custom rules
+- [Incident-Investigation-Report](https://github.com/rohithbaggu56-dot/Incident-Investigation-Report) — Template for end-to-end incident documentation
+- [Log-Analysis-Detection-Notes](https://github.com/rohithbaggu56-dot/Log-Analysis-Detection-Notes) — Windows Event IDs, Linux logs, IOC extraction
+- [Splunk-SIEM-Practice-Notes](https://github.com/rohithbaggu56-dot/Splunk-SIEM-Practice-Notes) — SPL queries, dashboards, alert logic
 
 **Specialized Topics:**
-- [Phishing-Analysis](https://github.com/rohithbaggu56-dot/Phishing-Analysis)
-- [pfSense-firewall-lab](https://github.com/rohithbaggu56-dot/pfSense-firewall-lab)
-- [AIRIA-AI-Log-Triage-Lab](https://github.com/rohithbaggu56-dot/AIRIA-AI-Log-Triage-Lab)
+- [Phishing-Analysis](https://github.com/rohithbaggu56-dot/Phishing-Analysis) — Email header analysis, domain spoofing detection
+- [pfSense-firewall-lab](https://github.com/rohithbaggu56-dot/pfSense-firewall-lab) — Network segmentation, firewall rules, traffic control
+- [AIRIA-AI-Log-Triage-Lab](https://github.com/rohithbaggu56-dot/AIRIA-AI-Log-Triage-Lab) — AI-assisted SOC triage experimentation
+
+</details>
 
 ---
 
-## 🎯 What Matters in These Repos
+## 💡 What Matters in These Repos
 
 **I Don't Just Run Labs** — I Investigate Like an Analyst
 - Every repo documents the question: "What happened?"
@@ -283,16 +318,18 @@ Detection rules are how L1 analysts scale their attention. Good rules catch atta
 
 ---
 
-## 💬 Let's Talk
+## 📬 Get in Touch
 
-**LinkedIn:** [Rohith Baggu](https://www.linkedin.com/in/rohithbaggu/)  
-**TryHackMe:** [Rohithbaggu56](https://tryhackme.com/p/rohithbaggu56)
-
-I'm actively hunting for SOC Analyst L1 / Security Analyst roles at:
+**Open to SOC Analyst L1 / Security Analyst roles at:**
 - Tier 1 IT firms (TCS, Wipro, Infosys, HCLTech, Tech Mahindra, Capgemini)
 - Tier 2 MSSPs (Sequretek, Inspira Enterprise, Aujas, UST Global)
-- Government cybersecurity bodies (CERT-In, NCIIPC, DRDO)
+- Government cybersecurity bodies (CERT-In, NCIIPC, DRDO, NIC, CDAC)
+
+**LinkedIn:** [linkedin.com/in/rohithbaggu](https://linkedin.com/in/rohithbaggu)  
+**TryHackMe:** [tryhackme.com/p/rohithbaggu56](https://tryhackme.com/p/rohithbaggu56)
 
 If you're hiring or know someone who is — let's connect.
 
 ---
+
+**151 contributions in the last year** — time spent investigating, documenting, and learning from real incidents.
