@@ -1,10 +1,12 @@
-# 👋 Hi, I'm Rohith Baggu — SOC Analyst | Real Attack Investigation
+# 👋 Hi, I’m Rohith Baggu  
+**SOC Analyst | Detection Engineering | Incident Investigation**
 
-I investigate real attacks. I build detection rules. I break things in labs and learn how to find them in production.
+I investigate real attacks, build detection rules, and analyze alerts across SIEM and endpoint telemetry.
 
-My home lab runs live attack simulations against real machines. My repos document actual investigations — the kind where you pull logs, validate alerts, and decide what to escalate. Everything here is hands-on, real-world, and built from scratch.
+My home lab simulates realistic attack scenarios with detections mapped to MITRE ATT&CK frameworks.
 
-**Currently hunting for:** SOC Analyst L1 / Security Analyst roles at Tier 1 IT firms and MSSPs
+**Lab Workflow:**  
+`Attacker VM → Target VM → Sysmon / Suricata → SIEM → Alert Validation & Investigation`
 
 ---
 
@@ -12,11 +14,11 @@ My home lab runs live attack simulations against real machines. My repos documen
 
 Every investigation follows the same workflow. Here's what I actually do:
 
-1. **Detection** — Alert fires (SIEM rule, IDS signature, or log anomaly)
-2. **Triage** — Is this real or noise? Check the logs
-3. **Log Analysis** — Build a timeline. What happened? When? From where?
-4. **Threat Intelligence** — Validate IPs, hashes, domains against external sources
-5. **Decision** — Close it (benign positive), escalate it (real incident), or tune the rule
+1. **Detection** – Alert fires (SIEM rule, IDS signature, or log anomaly)
+2. **Triage** – Is this real or noise? Check the logs
+3. **Log Analysis** – Build a timeline. What happened? When? From where?
+4. **Threat Intelligence** – Validate IPs, hashes, domains against external sources
+5. **Decision** – Close it (benign positive), escalate it (real incident), or tune the rule
 
 This methodology runs through every lab. Pick a repo and you'll see exactly this pattern.
 
@@ -66,7 +68,7 @@ This methodology runs through every lab. Pick a repo and you'll see exactly this
 - Correlated failed attempts with successful logins to identify breaches
 - Validated suspicious IPs against AbuseIPDB and VirusTotal
 - Built a dashboard showing top attacking sources, failed login trends, and targeted accounts
-- Investigated post-compromise activity — found none, system was defended
+- Investigated post-compromise activity – found none, system was defended
 
 **Tools:** Splunk Enterprise | SPL | Windows Security Event Logs | VirusTotal | AbuseIPDB  
 **MITRE ATT&CK:** T1110 (Brute Force), T1110.003 (Password Spraying), T1078 (Valid Accounts)
@@ -137,11 +139,11 @@ This methodology runs through every lab. Pick a repo and you'll see exactly this
 6. Credential dumping → sekurlsa::logonpasswords
 
 **What I Found (Sysmon Only):**
-- Event ID 15 (File stream created) — Payload origin and Discord download URL
-- Event ID 3 (Network connection) — Reverse shell callback to attacker IP
-- Event ID 1 (Process creation) — Parent-child relationships showing cmd.exe → backdoor creation
-- Event ID 22 (DNS query) — certutil reaching github.com (LOLBin exposed)
-- Event ID 1 (Masquerading) — Mimikatz renamed, but internal metadata still readable
+- Event ID 15 (File stream created) – Payload origin and Discord download URL
+- Event ID 3 (Network connection) – Reverse shell callback to attacker IP
+- Event ID 1 (Process creation) – Parent-child relationships showing cmd.exe → backdoor creation
+- Event ID 22 (DNS query) – certutil reaching github.com (LOLBin exposed)
+- Event ID 1 (Masquerading) – Mimikatz renamed, but internal metadata still readable
 
 **The Insight:**
 You cannot hide what you are. Renaming a file changes the filename, not the PE header. Sysmon catches what Windows Event Viewer misses.
@@ -252,7 +254,7 @@ Detection rules are how L1 analysts scale their attention. Good rules catch atta
 
 **TryHackMe**  
 ![TryHackMe](https://img.shields.io/badge/TryHackMe-SOC%20Level%201-2E2E2E?style=flat&logo=tryhackme)  
-Completed the SOC Level 1 path — hands‑on modules covering Wireshark, Splunk, Elastic, EDR tools, and incident response.  
+Completed the SOC Level 1 path – hands‑on modules covering Wireshark, Splunk, Elastic, EDR tools, and incident response.  
 Currently exploring advanced rooms focused on detection engineering, log analysis, and threat hunting.
 
 **Let's Defend**  
@@ -271,35 +273,35 @@ Hands‑on SOC labs mapped to MITRE ATT&CK and real‑world detection workfl
 <summary><strong>View all 16 repositories (Click to Expand)</strong></summary>
 
 **Real Attack Data:**
-- [Azure-Honeypot-SOC-Lab](https://github.com/rohithbaggu56-dot/Azure-Honeypot-SOC-Lab) — 3,400+ real RDP logins, custom detection rules
-- [SOC-Incident-Investigation-Splunk](https://github.com/rohithbaggu56-dot/SOC-Incident-Investigation-Splunk) — 17,126 failed logins, threat validation
-- [SOC-Workflow-RDP-Brute-Force-Suricata-Sentinel](https://github.com/rohithbaggu56-dot/SOC-Workflow-RDP-Brute-Force-Suricata-Sentinel) — Alert to closure workflow
-- [Elastic-SIEM-Lab-Azure-Cloud-Deployment](https://github.com/rohithbaggu56-dot/Elastic-SIEM-Lab-Azure-Cloud-Deployment) — Real SSH attacks, Kibana dashboards
+- [Azure-Honeypot-SOC-Lab](https://github.com/rohithbaggu56-dot/Azure-Honeypot-SOC-Lab) – 3,400+ real RDP logins, custom detection rules
+- [SOC-Incident-Investigation-Splunk](https://github.com/rohithbaggu56-dot/SOC-Incident-Investigation-Splunk) – 17,126 failed logins, threat validation
+- [SOC-Workflow-RDP-Brute-Force-Suricata-Sentinel](https://github.com/rohithbaggu56-dot/SOC-Workflow-RDP-Brute-Force-Suricata-Sentinel) – Alert to closure workflow
+- [Elastic-SIEM-Lab-Azure-Cloud-Deployment](https://github.com/rohithbaggu56-dot/Elastic-SIEM-Lab-Azure-Cloud-Deployment) – Real SSH attacks, Kibana dashboards
 
 **Simulated Attacks (Controlled Lab):**
-- [Sysmon-attack-investigation-lab](https://github.com/rohithbaggu56-dot/Sysmon-attack-investigation-lab) — Full attack chain from payload to credential dumping
-- [SOC-Home-Lab-BlueTeam](https://github.com/rohithbaggu56-dot/SOC-Home-Lab-BlueTeam) — 3-VM home lab with Wazuh, Splunk, pfSense
-- [Wazuh-SIEM-SOC-Hands-On-Lab](https://github.com/rohithbaggu56-dot/Wazuh-SIEM-SOC-Hands-On-Lab) — Windows + Linux agent deployment, VirusTotal integration
-- [ModSecurity-WAF-DVWA-Lab](https://github.com/rohithbaggu56-dot/ModSecurity-WAF-DVWA-Lab) — Web attack detection, WAF rule testing
+- [Sysmon-attack-investigation-lab](https://github.com/rohithbaggu56-dot/Sysmon-attack-investigation-lab) – Full attack chain from payload to credential dumping
+- [SOC-Home-Lab-BlueTeam](https://github.com/rohithbaggu56-dot/SOC-Home-Lab-BlueTeam) – 3-VM home lab with Wazuh, Splunk, pfSense
+- [Wazuh-SIEM-SOC-Hands-On-Lab](https://github.com/rohithbaggu56-dot/Wazuh-SIEM-SOC-Hands-On-Lab) – Windows + Linux agent deployment, VirusTotal integration
+- [ModSecurity-WAF-DVWA-Lab](https://github.com/rohithbaggu56-dot/ModSecurity-WAF-DVWA-Lab) – Web attack detection, WAF rule testing
 
 **Detection & Analysis:**
-- [Microsoft-Sentinel-KQL-Sysmon-Lab](https://github.com/rohithbaggu56-dot/Microsoft-Sentinel-KQL-Sysmon-Lab) — KQL queries, Sysmon integration, authentication analysis
-- [Suricata-and-Sentinel-integration](https://github.com/rohithbaggu56-dot/Suricata-and-Sentinel-integration) — IDS → SIEM pipeline, custom rules
-- [Incident-Investigation-Report](https://github.com/rohithbaggu56-dot/Incident-Investigation-Report) — Template for end-to-end incident documentation
-- [Log-Analysis-Detection-Notes](https://github.com/rohithbaggu56-dot/Log-Analysis-Detection-Notes) — Windows Event IDs, Linux logs, IOC extraction
-- [Splunk-SIEM-Practice-Notes](https://github.com/rohithbaggu56-dot/Splunk-SIEM-Practice-Notes) — SPL queries, dashboards, alert logic
+- [Microsoft-Sentinel-KQL-Sysmon-Lab](https://github.com/rohithbaggu56-dot/Microsoft-Sentinel-KQL-Sysmon-Lab) – KQL queries, Sysmon integration, authentication analysis
+- [Suricata-and-Sentinel-integration](https://github.com/rohithbaggu56-dot/Suricata-and-Sentinel-integration) – IDS → SIEM pipeline, custom rules
+- [Incident-Investigation-Report](https://github.com/rohithbaggu56-dot/Incident-Investigation-Report) – Template for end-to-end incident documentation
+- [Log-Analysis-Detection-Notes](https://github.com/rohithbaggu56-dot/Log-Analysis-Detection-Notes) – Windows Event IDs, Linux logs, IOC extraction
+- [Splunk-SIEM-Practice-Notes](https://github.com/rohithbaggu56-dot/Splunk-SIEM-Practice-Notes) – SPL queries, dashboards, alert logic
 
 **Specialized Topics:**
-- [Phishing-Analysis](https://github.com/rohithbaggu56-dot/Phishing-Analysis) — Email header analysis, domain spoofing detection
-- [pfSense-firewall-lab](https://github.com/rohithbaggu56-dot/pfSense-firewall-lab) — Network segmentation, firewall rules, traffic control
-- [AIRIA-AI-Log-Triage-Lab](https://github.com/rohithbaggu56-dot/AIRIA-AI-Log-Triage-Lab) — AI-assisted SOC triage experimentation
+- [Phishing-Analysis](https://github.com/rohithbaggu56-dot/Phishing-Analysis) – Email header analysis, domain spoofing detection
+- [pfSense-firewall-lab](https://github.com/rohithbaggu56-dot/pfSense-firewall-lab) – Network segmentation, firewall rules, traffic control
+- [AIRIA-AI-Log-Triage-Lab](https://github.com/rohithbaggu56-dot/AIRIA-AI-Log-Triage-Lab) – AI-assisted SOC triage experimentation
 
 </details>
 
 ---
 ### 💡 What Matters in My Repositories
 
-**I Don’t Just Run Labs — I Investigate Like an Analyst**  
+**I Don’t Just Run Labs – I Investigate Like an Analyst**  
 - Each repository answers the question: *“What happened?”*  
 - Findings are validated using logs, threat intelligence, and multiple sources.  
 - Every decision is documented — escalation, closure, and lessons learned.
@@ -310,7 +312,7 @@ Hands‑on SOC labs mapped to MITRE ATT&CK and real‑world detection workfl
 - Alert validation focused on distinguishing signal from noise.
 
 **I Learn From Mistakes**  
-- Labs are real — VMs freeze, configs break, rules need tuning.  
+- Labs are real – VMs freeze, configs break, rules need tuning.  
 - Each repo includes what went wrong and how it was fixed.  
 - Continuous improvement is how true SOC analysts grow.
 
