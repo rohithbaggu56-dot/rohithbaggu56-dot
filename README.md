@@ -155,7 +155,7 @@ You cannot hide what you are. Renaming a file changes the filename, not the PE h
 **Tools:** Suricata 7.x | Microsoft Sentinel | Azure Monitor Agent | Emerging Threats Ruleset | Kali Linux (attacker) | KQL  
 **MITRE ATT&CK:** T1595 (Active Scanning), T1110 (Brute Force), T1190 (Exploit Public-Facing Application)
 
-**Repo:** [Suricata-and-Sentinel-integration](https://github.com/rohithbaggu56-dot/Suricata-and-Sentinel-integration)
+**Repo:** [Suricata-and-Sentinel-integration](https://github.com/rohithbaggu56-dot/Suriata-and-Sentinel-integraion)
 
 </details>
 
