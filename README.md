@@ -199,75 +199,74 @@ Detection rules are how L1 analysts scale their attention. Good rules catch atta
 </details>
 
 ---
-### 🧰 Tools & Technologies
+## 🧰 Tools & Technologies
 
-**SIEM Platforms**  
-![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat&logo=splunk)
-![Elastic Stack](https://img.shields.io/badge/Elastic%20Stack-005571?style=flat&logo=elastic)
-![Wazuh](https://img.shields.io/badge/Wazuh-4A90E2?style=flat&logo=wazuh)
-![Microsoft Sentinel](https://img.shields.io/badge/Microsoft%20Sentinel-0078D4?style=flat&logo=microsoft)
+### SIEM Platforms
+![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=white)
+![Elastic Stack](https://img.shields.io/badge/Elastic_Stack-005571?style=flat-square&logo=elastic&logoColor=white)
+![Wazuh](https://img.shields.io/badge/Wazuh-3366CC?style=flat-square&logoColor=white)
+![Microsoft Sentinel](https://img.shields.io/badge/Microsoft_Sentinel-0078D4?style=flat-square&logo=microsoft&logoColor=white)
 
-**Cloud & Detection**  
-![Microsoft Azure](https://img.shields.io/badge/Microsoft%20Azure-0089D6?style=flat&logo=microsoftazure)
-![Azure Monitor](https://img.shields.io/badge/Azure%20Monitor-0078D4?style=flat&logo=microsoft)
-![Log Analytics](https://img.shields.io/badge/Log%20Analytics-0078D4?style=flat&logo=microsoft)
-![Azure NSG](https://img.shields.io/badge/Azure%20NSG-0078D4?style=flat&logo=microsoft)
+### Cloud & Detection
+![Microsoft Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Azure Monitor](https://img.shields.io/badge/Azure_Monitor-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Log Analytics](https://img.shields.io/badge/Log_Analytics-0078D4?style=flat-square&logoColor=white)
+![Azure NSG](https://img.shields.io/badge/Azure_NSG-0078D4?style=flat-square&logoColor=white)
 
-**Network & IDS**  
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat&logo=wireshark)
-![Suricata](https://img.shields.io/badge/Suricata-E34F26?style=flat&logo=suricata)
-![Nmap](https://img.shields.io/badge/Nmap-4682B4?style=flat&logo=nmap)
-![pfSense](https://img.shields.io/badge/pfSense-212121?style=flat&logo=pfsense)
-![ModSecurity](https://img.shields.io/badge/ModSecurity-FF0000?style=flat&logo=apache)
+### Network & IDS
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
+![Suricata](https://img.shields.io/badge/Suricata-EF3B2D?style=flat-square&logoColor=white)
+![Nmap](https://img.shields.io/badge/Nmap-214478?style=flat-square&logoColor=white)
+![pfSense](https://img.shields.io/badge/pfSense-212121?style=flat-square&logoColor=white)
+![ModSecurity](https://img.shields.io/badge/ModSecurity-FF0000?style=flat-square&logoColor=white)
 
-**Endpoint & Logs**  
-![Sysmon](https://img.shields.io/badge/Sysmon-0078D4?style=flat&logo=windows)
-![Windows Event Logs](https://img.shields.io/badge/Windows%20Event%20Logs-0078D4?style=flat&logo=windows)
-![Linux Logs](https://img.shields.io/badge/Linux%20Logs-FCC624?style=flat&logo=linux)
+### Endpoint & Logs
+![Sysmon](https://img.shields.io/badge/Sysmon-0078D6?style=flat-square&logoColor=white)
+![Windows Logs](https://img.shields.io/badge/Windows_Logs-0078D6?style=flat-square&logo=windows&logoColor=white)
+![Linux Logs](https://img.shields.io/badge/Linux_Logs-FCC624?style=flat-square&logo=linux&logoColor=black)
 
-**Threat Intelligence**  
-![VirusTotal](https://img.shields.io/badge/VirusTotal-394EFF?style=flat&logo=virustotal)
-![AbuseIPDB](https://img.shields.io/badge/AbuseIPDB-FF0000?style=flat&logo=shield)
-![urlscan.io](https://img.shields.io/badge/urlscan.io-00BFFF?style=flat&logo=internetexplorer)
-![MXToolbox](https://img.shields.io/badge/MXToolbox-FF6600?style=flat&logo=toolbox)
+### Threat Intelligence
+![VirusTotal](https://img.shields.io/badge/VirusTotal-394EFF?style=flat-square&logo=virustotal&logoColor=white)
+![AbuseIPDB](https://img.shields.io/badge/AbuseIPDB-EF3B2D?style=flat-square&logoColor=white)
+![urlscan.io](https://img.shields.io/badge/urlscan.io-1E90FF?style=flat-square&logoColor=white)
+![MXToolbox](https://img.shields.io/badge/MXToolbox-F97316?style=flat-square&logoColor=white)
 
-**Frameworks & Methods**  
-![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-FF0000?style=flat&logo=mitre)
-![Cyber Kill Chain](https://img.shields.io/badge/Cyber%20Kill%20Chain-000000?style=flat&logo=lock)
-![Pyramid of Pain](https://img.shields.io/badge/Pyramid%20of%20Pain-8B0000?style=flat&logo=security)
-![NIST CSF](https://img.shields.io/badge/NIST%20CSF-003366?style=flat&logo=gov)
-
----
-
-### 📜 Certifications
-
-![Google Cybersecurity Professional](https://img.shields.io/badge/Google%20Cybersecurity%20Professional-4285F4?style=flat&logo=google)
-![Microsoft Cybersecurity Analyst](https://img.shields.io/badge/Microsoft%20Cybersecurity%20Analyst-0078D4?style=flat&logo=microsoft)
-![TryHackMe SOC Level 1](https://img.shields.io/badge/TryHackMe%20SOC%20Level%201-2E2E2E?style=flat&logo=tryhackme)
-![IBM Ethical Hacking & Open Source Tools](https://img.shields.io/badge/IBM%20Ethical%20Hacking%20%26%20Open%20Source%20Tools-054ADA?style=flat&logo=ibm)
-
-
+### Frameworks & Methodologies
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE_ATT%26CK-FF3B30?style=flat-square&logoColor=white)
+![Cyber Kill Chain](https://img.shields.io/badge/Cyber_Kill_Chain-111111?style=flat-square&logoColor=white)
+![Pyramid of Pain](https://img.shields.io/badge/Pyramid_of_Pain-8B0000?style=flat-square&logoColor=white)
+![NIST CSF](https://img.shields.io/badge/NIST_CSF-0F172A?style=flat-square&logoColor=white)
 
 ---
 
-## 🔬 Currently Learning
+## 📜 Certifications
 
-**TryHackMe SOC Level 1 Path:**
-- Hands-on modules: Wireshark, Splunk, Elastic, EDR tools, incident response
-- Focus: Detection rules, log analysis, incident triage
-- Status: Actively completing rooms
-
-**Let's Defend:**
-- Blue team incident response scenarios
-- Focus: Real-world SOC workflow simulation
-
-**Completed:**
-- Commonwealth Bank Forage (SOC analyst job simulation) ✅
+![Google Cybersecurity](https://img.shields.io/badge/Google_Cybersecurity-4285F4?style=flat-square&logo=google&logoColor=white)
+![Microsoft Security](https://img.shields.io/badge/Microsoft_Security-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![TryHackMe SOC Level 1](https://img.shields.io/badge/TryHackMe_SOC_Level_1-212C42?style=flat-square&logo=tryhackme&logoColor=white)
+![IBM Ethical Hacking](https://img.shields.io/badge/IBM_Ethical_Hacking-1261FE?style=flat-square&logo=ibm&logoColor=white)
 
 ---
 
-## 📂 All Repositories
+### 📚 Current Learning & Practical Labs
 
+**TryHackMe**  
+![TryHackMe](https://img.shields.io/badge/TryHackMe-SOC%20Level%201-2E2E2E?style=flat&logo=tryhackme)  
+Completed the SOC Level 1 path — hands‑on modules covering Wireshark, Splunk, Elastic, EDR tools, and incident response.  
+Currently exploring advanced rooms focused on detection engineering, log analysis, and threat hunting.
+
+**Let's Defend**  
+![LetsDefend](https://img.shields.io/badge/LetsDefend-Blue%20Team%20Labs-1E90FF?style=flat&logo=letsdefend)  
+Engaged in blue‑team simulations and theory learning to strengthen SOC workflow understanding and incident triage skills.
+
+**Forage Virtual Internships**  
+![Forage](https://img.shields.io/badge/Forage-SOC%20Simulation%20Labs-00BFFF?style=flat&logo=forage)  
+Completed seven SOC analyst simulation internships (Commonwealth Bank and others) — focused on alert analysis, triage, and reporting.
+
+---
+
+### 📂 All Repositories
+Hands‑on SOC labs mapped to MITRE ATT&CK and real‑world detection workflows. 
 <details>
 <summary><strong>View all 16 repositories (Click to Expand)</strong></summary>
 
@@ -298,38 +297,29 @@ Detection rules are how L1 analysts scale their attention. Good rules catch atta
 </details>
 
 ---
+### 💡 What Matters in My Repositories
 
-## 💡 What Matters in These Repos
+**I Don’t Just Run Labs — I Investigate Like an Analyst**  
+- Each repository answers the question: *“What happened?”*  
+- Findings are validated using logs, threat intelligence, and multiple sources.  
+- Every decision is documented — escalation, closure, and lessons learned.
 
-**I Don't Just Run Labs** — I Investigate Like an Analyst
-- Every repo documents the question: "What happened?"
-- Every finding is validated (logs, threat intel, multiple sources)
-- Every decision is explained (why I escalated, why I closed it, what I learned)
+**I Map to Real‑World Frameworks**  
+- MITRE ATT&CK techniques integrated into every investigation.  
+- Incident response workflow: *Detect → Triage → Investigate → Remediate.*  
+- Alert validation focused on distinguishing signal from noise.
 
-**I Map to Real-World Frameworks**
-- MITRE ATT&CK techniques in every investigation
-- Incident response workflow (detect → triage → investigate → remediate)
-- Alert validation (how to tell signal from noise)
-
-**I Learn From Mistakes**
-- Labs aren't perfect — they're real. VMs froze, configs broke, rules needed tuning
-- Each repo includes what went wrong and how I fixed it
-- This is how you actually get better at SOC work
+**I Learn From Mistakes**  
+- Labs are real — VMs freeze, configs break, rules need tuning.  
+- Each repo includes what went wrong and how it was fixed.  
+- Continuous improvement is how true SOC analysts grow.
 
 ---
 
 ## 📬 Get in Touch
 
-**Open to SOC Analyst L1 / Security Analyst roles at:**
-- Tier 1 IT firms (TCS, Wipro, Infosys, HCLTech, Tech Mahindra, Capgemini)
-- Tier 2 MSSPs (Sequretek, Inspira Enterprise, Aujas, UST Global)
-- Government cybersecurity bodies (CERT-In, NCIIPC, DRDO, NIC, CDAC)
+**Actively exploring opportunities as a SOC Analyst L1 / Security Analyst**  
+Focused on entry‑level roles where I can apply hands‑on detection, investigation, and threat‑hunting skills.
 
-**LinkedIn:** [linkedin.com/in/rohithbaggu](https://linkedin.com/in/rohithbaggu)  
-**TryHackMe:** [tryhackme.com/p/rohithbaggu56](https://tryhackme.com/p/rohithbaggu56)
-
-If you're hiring or know someone who is — let's connect.
-
----
-
-**151 contributions in the last year** — time spent investigating, documenting, and learning from real incidents.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rohithbaggu/)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42?style=flat-square&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/rohithbaggu56)
