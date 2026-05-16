@@ -234,7 +234,7 @@ Detection rules are how L1 analysts scale their attention. Good rules catch atta
 **Pinned (Start Here):**
 - [Azure-Honeypot-SOC-Lab](https://github.com/rohithbaggu56-dot/Azure-Honeypot-SOC-Lab) — Real attack data, custom detection rules, incident investigation
 - [SOC-Home-Lab-BlueTeam](https://github.com/rohithbaggu56-dot/SOC-Home-Lab-BlueTeam) — Complete 3-VM home lab with Wazuh, Splunk, pfSense
-- [Suricata-and-Sentinel-integration](https://github.com/rohithbaggu56-dot/Suricata-and-Sentinel-integration) — IDS → SIEM pipeline, real attacks, custom rules
+- [Suricata-and-Sentinel-integration](https://github.com/rohithbaggu56-dot/Suriata-and-Sentinel-integraion) — IDS → SIEM pipeline, real attacks, custom rules
 - [Microsoft-Sentinel-KQL-Sysmon-Lab](https://github.com/rohithbaggu56-dot/Microsoft-Sentinel-KQL-Sysmon-Lab) — Detection queries, Sysmon integration, authentication analysis
 
 **By Investigation Type:**
