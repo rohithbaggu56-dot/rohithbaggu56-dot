@@ -302,13 +302,13 @@ Hands‑on SOC labs mapped to MITRE ATT&CK and real‑world detection workfl
 ### 💡 What Matters in My Repositories
 
 **I Don’t Just Run Labs – I Investigate Like an Analyst**  
-- Each repository answers the question: *“What happened?”*  
+- Each repository answers the question: “What happened?” 
 - Findings are validated using logs, threat intelligence, and multiple sources.  
-- Every decision is documented — escalation, closure, and lessons learned.
+- Every decision is documented – escalation, closure, and lessons learned.
 
 **I Map to Real‑World Frameworks**  
 - MITRE ATT&CK techniques integrated into every investigation.  
-- Incident response workflow: *Detect → Triage → Investigate → Remediate.*  
+- Incident response workflow: **Detect → Triage → Investigate → Remediate.**  
 - Alert validation focused on distinguishing signal from noise.
 
 **I Learn From Mistakes**  
