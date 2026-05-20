@@ -175,7 +175,7 @@ You cannot hide what you are. Renaming a file changes the filename, not the PE h
 **Tools:** Suricata 7.x | Microsoft Sentinel | Azure Monitor Agent | Emerging Threats Ruleset | Kali Linux | KQL  
 **MITRE ATT&CK:** T1595 (Active Scanning), T1110 (Brute Force), T1190 (Exploit Public-Facing Application)
 
-**Repo:** [Suricata-and-Sentinel-integration](https://github.com/rohithbaggu56-dot/Suricata-and-Sentinel-integration)
+**Repo:** [Suricata-and-Sentinel-integration](https://github.com/rohithbaggu56-dot/Suriata-and-Sentinel-integraion)
 
 </details>
 
@@ -286,7 +286,7 @@ Hands‑on SOC labs mapped to MITRE ATT&CK and real‑world detection workfl
 
 **Detection & Analysis:**
 - [Microsoft-Sentinel-KQL-Sysmon-Lab](https://github.com/rohithbaggu56-dot/Microsoft-Sentinel-KQL-Sysmon-Lab) – KQL queries, Sysmon integration, authentication analysis
-- [Suricata-and-Sentinel-integration](https://github.com/rohithbaggu56-dot/Suricata-and-Sentinel-integration) – IDS → SIEM pipeline, custom rules
+- [Suricata-and-Sentinel-integration](https://github.com/rohithbaggu56-dot/Suriata-and-Sentinel-integraion) – IDS → SIEM pipeline, custom rules
 - [Incident-Investigation-Report](https://github.com/rohithbaggu56-dot/Incident-Investigation-Report) – Template for end-to-end incident documentation
 - [Log-Analysis-Detection-Notes](https://github.com/rohithbaggu56-dot/Log-Analysis-Detection-Notes) – Windows Event IDs, Linux logs, IOC extraction
 - [Splunk-SIEM-Practice-Notes](https://github.com/rohithbaggu56-dot/Splunk-SIEM-Practice-Notes) – SPL queries, dashboards, alert logic
