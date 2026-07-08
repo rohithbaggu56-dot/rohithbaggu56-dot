@@ -217,17 +217,20 @@ Detection rules are how L1 analysts scale their attention. Good rules catch atta
 ![Log Analytics](https://img.shields.io/badge/Log_Analytics-0078D4?style=flat-square&logoColor=white)
 ![Azure NSG](https://img.shields.io/badge/Azure_NSG-0078D4?style=flat-square&logoColor=white)
 
-### Network & IDS
+### Network Security 
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
 ![Suricata](https://img.shields.io/badge/Suricata-EF3B2D?style=flat-square&logoColor=white)
 ![Nmap](https://img.shields.io/badge/Nmap-214478?style=flat-square&logoColor=white)
 ![pfSense](https://img.shields.io/badge/pfSense-212121?style=flat-square&logoColor=white)
 ![ModSecurity](https://img.shields.io/badge/ModSecurity-FF0000?style=flat-square&logoColor=white)
+![Hydra](https://img.shields.io/badge/Hydra-2F2F2F?style=flat-square&logo=kalilinux&logoColor=white)
 
 ### Endpoint & Logs
 ![Sysmon](https://img.shields.io/badge/Sysmon-0078D6?style=flat-square&logoColor=white)
 ![Windows Logs](https://img.shields.io/badge/Windows_Logs-0078D6?style=flat-square&logo=windows&logoColor=white)
 ![Linux Logs](https://img.shields.io/badge/Linux_Logs-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Active Directory](https://img.shields.io/badge/Active%20Directory-003366?style=flat-square&logo=windows&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
 
 ### Threat Intelligence
 ![VirusTotal](https://img.shields.io/badge/VirusTotal-394EFF?style=flat-square&logo=virustotal&logoColor=white)
@@ -240,6 +243,15 @@ Detection rules are how L1 analysts scale their attention. Good rules catch atta
 ![Cyber Kill Chain](https://img.shields.io/badge/Cyber_Kill_Chain-111111?style=flat-square&logoColor=white)
 ![Pyramid of Pain](https://img.shields.io/badge/Pyramid_of_Pain-8B0000?style=flat-square&logoColor=white)
 ![NIST CSF](https://img.shields.io/badge/NIST_CSF-0F172A?style=flat-square&logoColor=white)
+![MITRE D3FEND](https://img.shields.io/badge/MITRE%20D3FEND-0057B8?style=flat-square)
+![OWASP Top 10](https://img.shields.io/badge/OWASP%20Top%2010-000000?style=flat-square&logo=owasp&logoColor=white)
+
+### 🖥️ Operating Systems
+
+![Windows Server 2022](https://img.shields.io/badge/Windows%20Server%202022-0078D6?style=flat-square&logo=windows&logoColor=white)
+![Windows 10](https://img.shields.io/badge/Windows%2010-0078D6?style=flat-square&logo=windows&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420?style=flat-square&logo=ubuntu&logoColor=white)
+![Kali Linux](https://img.shields.io/badge/Kali%20Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white)
 
 ---
 
