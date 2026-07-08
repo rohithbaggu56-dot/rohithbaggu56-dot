@@ -5,7 +5,7 @@ I investigate real attacks, build detection rules, and analyze alerts across SIE
 
 My home lab simulates realistic attack scenarios with detections mapped to MITRE ATT&CK frameworks.
 
-Built 15+ cybersecurity labs covering Active Directory, SIEM, endpoint monitoring, IDS/IPS, threat hunting, phishing analysis, detection engineering, and incident investigations.
+Built 16+ cybersecurity labs covering Active Directory, SIEM, endpoint monitoring, IDS/IPS, threat hunting, phishing investigations, detection engineering, and incident response.
 
 **Lab Workflow:**  
 `Attacker VM → Target VM → Sysmon / Suricata → SIEM → Alert Validation & Investigation`
