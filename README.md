@@ -1,5 +1,5 @@
 # 👋 Hi, I’m Rohith Baggu  
-**SOC Analyst | Detection Engineering | Incident Investigation**
+**SOC Analyst | Threat Hunting | Detection Engineering | Incident Response**
 
 I investigate real attacks, build detection rules, and analyze alerts across SIEM and endpoint telemetry.
 
