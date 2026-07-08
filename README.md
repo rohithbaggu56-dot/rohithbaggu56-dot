@@ -24,7 +24,7 @@ This methodology runs through every lab. Pick a repo and you'll see exactly this
 
 ---
 
-## 🏆 My Investigations
+## 🏆 Featured Projects
 
 ### Real Attack Data (Actual Internet Threat Actors)
 
@@ -53,7 +53,7 @@ This methodology runs through every lab. Pick a repo and you'll see exactly this
 </details>
 
 <details>
-<summary><strong>📊 Splunk Investigation – 17,126 Failed Logins, Real Attackers</strong></summary>
+<summary><strong>📊 Splunk Incident Investigation</strong></summary>
 
 **What:** Monitored SSH authentication logs over 21 days. Real automated scanning tools (not simulated) hit the system from IPs across Argentina, China, Philippines, India, Japan, South Korea.
 
