@@ -33,8 +33,7 @@ This methodology runs through every lab. Pick a repo and you'll see exactly this
 <details>
 <summary><strong>🏢 Enterprise Active Directory SOC Lab</strong></summary>
 
-**What:**
-Built a complete enterprise Active Directory environment integrated with Wazuh SIEM, Sysmon, and PowerShell automation to simulate enterprise attacks and practice SOC monitoring and investigation workflows.
+**What:** Built a complete enterprise Active Directory environment integrated with Wazuh SIEM, Sysmon, and PowerShell automation to simulate enterprise attacks and practice SOC monitoring and investigation workflows.
 
 **Lab Highlights:**
 - 4 virtual machines integrated into the lab
@@ -51,7 +50,7 @@ Built a complete enterprise Active Directory environment integrated with Wazuh S
 - Investigated detections mapped to MITRE ATT&CK techniques
 - Automated administrative tasks using PowerShell
 
-**Tools:** Windows Server 2022 | Active Directory | Wazuh | Sysmon | PowerShell | Kali Linux
+**Tools:** Windows Server 2022 | Active Directory | Wazuh | Sysmon | PowerShell | Kali Linux      
 **MITRE ATT&CK:** T1087 (Account Discovery), T1018 (Remote System Discovery), T1059.001 (PowerShell)
 
 **Repo:** [Enterprise-Active-Directory-SOC-Lab](https://github.com/rohithbaggu56-dot/Enterprise-Active-Directory-SOC-Lab)
@@ -61,7 +60,7 @@ Built a complete enterprise Active Directory environment integrated with Wazuh S
 <details>
 <summary><strong>🍯 Azure Honeypot – Windows RDP Exposed to the Internet</strong></summary>
 
-**What:** Intentionally exposed Windows Server 2022 VM to collect real attack traffic. No simulation — actual threat actors found the open RDP port within minutes.
+**What:** Intentionally exposed Windows Server 2022 VM to collect real attack traffic. No simulation, actual threat actors found the open RDP port within minutes.
 
 **By the Numbers:**
 - **3,404 failed RDP logins** in 14 hours (real brute force)
