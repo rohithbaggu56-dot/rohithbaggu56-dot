@@ -28,7 +28,35 @@ This methodology runs through every lab. Pick a repo and you'll see exactly this
 
 ## 🏆 Featured Projects
 
-### Real Attack Data (Actual Internet Threat Actors)
+### Enterprise & Real-World Detection Projects
+
+<details>
+<summary><strong>🏢 Enterprise Active Directory SOC Lab</strong></summary>
+
+**What:**
+Built a complete enterprise Active Directory environment integrated with Wazuh SIEM, Sysmon, and PowerShell automation to simulate enterprise attacks and practice SOC monitoring and investigation workflows.
+
+**Lab Highlights:**
+- 4 virtual machines integrated into the lab
+- 10+ Active Directory users and groups configured
+- 2 monitored Windows endpoints with Wazuh + Sysmon
+- Multiple Active Directory attack techniques simulated
+- MITRE ATT&CK mapped detections investigated
+
+**What I Did:**
+- Built an enterprise Active Directory domain from scratch
+- Joined Windows endpoints to the domain
+- Integrated Wazuh SIEM with Sysmon for endpoint visibility
+- Simulated Active Directory attacks from Kali Linux
+- Investigated detections mapped to MITRE ATT&CK techniques
+- Automated administrative tasks using PowerShell
+
+**Tools:** Windows Server 2022 | Active Directory | Wazuh | Sysmon | PowerShell | Kali Linux
+**MITRE ATT&CK:** T1087 (Account Discovery), T1018 (Remote System Discovery), T1059.001 (PowerShell)
+
+**Repo:** [Enterprise-Active-Directory-SOC-Lab](https://github.com/rohithbaggu56-dot/Enterprise-Active-Directory-SOC-Lab)
+
+</details>
 
 <details>
 <summary><strong>🍯 Azure Honeypot – Windows RDP Exposed to the Internet</strong></summary>
@@ -284,7 +312,7 @@ Completed seven SOC analyst simulation internships (Commonwealth Bank and 
 ### 📂 All Repositories
 Hands‑on SOC labs mapped to MITRE ATT&CK and real‑world detection workflows. 
 <details>
-<summary><strong>View all 16 repositories (Click to Expand)</strong></summary>
+<summary><strong>View all 17 repositories (Click to Expand)</strong></summary>
 
 **Real Attack Data:**
 - [Azure-Honeypot-SOC-Lab](https://github.com/rohithbaggu56-dot/Azure-Honeypot-SOC-Lab) – 3,400+ real RDP logins, custom detection rules
@@ -292,7 +320,8 @@ Hands‑on SOC labs mapped to MITRE ATT&CK and real‑world detection workfl
 - [SOC-Workflow-RDP-Brute-Force-Suricata-Sentinel](https://github.com/rohithbaggu56-dot/SOC-Workflow-RDP-Brute-Force-Suricata-Sentinel) – Alert to closure workflow
 - [Elastic-SIEM-Lab-Azure-Cloud-Deployment](https://github.com/rohithbaggu56-dot/Elastic-SIEM-Lab-Azure-Cloud-Deployment) – Real SSH attacks, Kibana dashboards
 
-**Simulated Attacks (Controlled Lab):**
+**Enterprise & Detection Labs:**
+- [Enterprise-Active-Directory-SOC-Lab](https://github.com/rohithbaggu56-dot/Enterprise-Active-Directory-SOC-Lab) – Enterprise Active Directory, Wazuh SIEM, Sysmon, PowerShell automation
 - [Sysmon-attack-investigation-lab](https://github.com/rohithbaggu56-dot/Sysmon-attack-investigation-lab) – Full attack chain from payload to credential dumping
 - [SOC-Home-Lab-BlueTeam](https://github.com/rohithbaggu56-dot/SOC-Home-Lab-BlueTeam) – 3-VM home lab with Wazuh, Splunk, pfSense
 - [Wazuh-SIEM-SOC-Hands-On-Lab](https://github.com/rohithbaggu56-dot/Wazuh-SIEM-SOC-Hands-On-Lab) – Windows + Linux agent deployment, VirusTotal integration
