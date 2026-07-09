@@ -33,7 +33,7 @@ This methodology runs through every lab. Pick a repo and you'll see exactly this
 <details>
 <summary><strong>🏢 Enterprise Active Directory SOC Lab</strong></summary>
 
-**What:** Built a complete enterprise Active Directory environment integrated with Wazuh SIEM, Sysmon, and PowerShell automation to simulate enterprise attacks and practice SOC monitoring and investigation workflows.
+**What:** Built an enterprise Active Directory environment with Wazuh, Sysmon, and PowerShell automation to simulate enterprise attack scenarios and practice SOC monitoring and investigation.
 
 **Lab Highlights:**
 - 4 virtual machines integrated into the lab
