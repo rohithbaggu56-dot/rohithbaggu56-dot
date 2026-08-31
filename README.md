@@ -152,6 +152,69 @@ This methodology runs through every lab. Pick a repo and you'll see exactly this
 
 ---
 
+
+### Endpoint Detection & Response (EDR)
+
+<details>
+<summary>🛡️ CrowdStrike Falcon EDR Investigations</summary>
+
+**What:** Built a CrowdStrike Falcon EDR investigation portfolio covering controlled attack simulations, behavioral detection, endpoint telemetry, MITRE ATT&CK mapping, and SOC-style incident documentation.
+
+**Lab Highlights:**
+
+- 5 end-to-end endpoint investigations documented
+- CrowdStrike Falcon used for behavioral detection and endpoint investigation
+- Atomic Red Team used to validate MITRE ATT&CK techniques
+- Process trees, process graphs, event timelines, and detection artifacts analyzed
+- Detection, prevention, quarantine, and incident response workflows investigated
+
+**What I Did:**
+
+- Investigated credential-access activity involving the SAM hive
+- Analyzed Atomic Red Team activity and Git-based payload execution
+- Investigated scheduled-task persistence
+- Analyzed LOLBin abuse using MSHTA
+- Investigated process injection detection
+- Mapped endpoint activity to MITRE ATT&CK techniques
+- Documented findings using a structured SOC investigation workflow
+
+**Tools:** CrowdStrike Falcon | Atomic Red Team | Windows | PowerShell | MITRE ATT&CK
+
+**Repo:** [CrowdStrike-Investigations](https://github.com/rohithbaggu56-dot/CrowdStrike-Investigations)
+
+</details>
+
+<details>
+<summary>🛡️ Sophos Endpoint SOC Investigation Lab</summary>
+
+**What:** Built a Sophos Endpoint and Sophos Central investigation lab to study endpoint protection, detection, investigation, identity context, process lineage, and remediation.
+
+**Lab Highlights:**
+
+- 3 focused endpoint investigations documented
+- Sophos Endpoint and Sophos Central used for detection and investigation
+- Active Directory identity context integrated through AD Sync
+- Process Lineage and detection telemetry analyzed
+- Web Protection, endpoint detection, and remediation workflows investigated
+
+**What I Did:**
+
+- Investigated EICAR web protection and endpoint detection
+- Analyzed Potentially Unwanted Application (PUA) detection
+- Investigated DOCM-based web protection and detection
+- Reviewed endpoint, user, process, and file context
+- Analyzed Process Lineage and available investigation telemetry
+- Compared Sophos investigation workflows with CrowdStrike Falcon
+- Examined detection, response, and remediation workflows
+
+**Tools:** Sophos Endpoint | Sophos Central | Active Directory | AD Sync | Windows 10
+
+**Repo:** [Sophos-Endpoint-SOC-Investigation-Lab](https://github.com/rohithbaggu56-dot/Sophos-Endpoint-SOC-Investigation-Lab)
+
+</details>
+
+---
+
 ### Simulated Attack Labs (Under My Control)
 
 <details>
@@ -259,6 +322,12 @@ Detection rules are how L1 analysts scale their attention. Good rules catch atta
 ![Active Directory](https://img.shields.io/badge/Active%20Directory-003366?style=flat-square&logo=windows&logoColor=white)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
 
+### EDR & Detection Validation
+![CrowdStrike Falcon](https://img.shields.io/badge/CrowdStrike_Falcon-EF0000?style=flat-square&logo=crowdstrike&logoColor=white)
+![Sophos](https://img.shields.io/badge/Sophos-0A6EBD?style=flat-square&logo=sophos&logoColor=white)
+![Microsoft Defender for Endpoint](https://img.shields.io/badge/Microsoft_Defender_for_Endpoint-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Atomic Red Team](https://img.shields.io/badge/Atomic_Red_Team-5C2D91?style=flat-square&logoColor=white)
+
 ### Threat Intelligence
 ![VirusTotal](https://img.shields.io/badge/VirusTotal-394EFF?style=flat-square&logo=virustotal&logoColor=white)
 ![AbuseIPDB](https://img.shields.io/badge/AbuseIPDB-EF3B2D?style=flat-square&logoColor=white)
@@ -311,7 +380,7 @@ Completed seven SOC analyst simulation internships (Commonwealth Bank and 
 ### 📂 All Repositories
 Hands‑on SOC labs mapped to MITRE ATT&CK and real‑world detection workflows. 
 <details>
-<summary><strong>View all 17 repositories (Click to Expand)</strong></summary>
+<summary><strong>View all 19 repositories (Click to Expand)</strong></summary>
 
 **Real Attack Data:**
 - [Azure-Honeypot-SOC-Lab](https://github.com/rohithbaggu56-dot/Azure-Honeypot-SOC-Lab) – 3,400+ real RDP logins, custom detection rules
@@ -325,6 +394,10 @@ Hands‑on SOC labs mapped to MITRE ATT&CK and real‑world detection workfl
 - [SOC-Home-Lab-BlueTeam](https://github.com/rohithbaggu56-dot/SOC-Home-Lab-BlueTeam) – 3-VM home lab with Wazuh, Splunk, pfSense
 - [Wazuh-SIEM-SOC-Hands-On-Lab](https://github.com/rohithbaggu56-dot/Wazuh-SIEM-SOC-Hands-On-Lab) – Windows + Linux agent deployment, VirusTotal integration
 - [ModSecurity-WAF-DVWA-Lab](https://github.com/rohithbaggu56-dot/ModSecurity-WAF-DVWA-Lab) – Web attack detection, WAF rule testing
+
+**Endpoint Detection & Response:**
+- [CrowdStrike-Investigations](https://github.com/rohithbaggu56-dot/CrowdStrike-Investigations) – 5 EDR investigations, behavioral detection, MITRE ATT&CK mapping
+- [Sophos-Endpoint-SOC-Investigation-Lab](https://github.com/rohithbaggu56-dot/Sophos-Endpoint-SOC-Investigation-Lab) – 3 endpoint investigations, detection, process analysis, remediation
 
 **Detection & Analysis:**
 - [Microsoft-Sentinel-KQL-Sysmon-Lab](https://github.com/rohithbaggu56-dot/Microsoft-Sentinel-KQL-Sysmon-Lab) – KQL queries, Sysmon integration, authentication analysis
