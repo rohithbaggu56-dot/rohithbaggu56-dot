@@ -1,13 +1,14 @@
-# 👋 Hi, I’m Rohith Baggu  
+# 👋 Hi, I’m Rohith Baggu
+
 **SOC Analyst | Threat Hunting | Detection Engineering | Incident Response**
 
-I investigate real attacks, build detection rules, and analyze alerts across SIEM and endpoint telemetry.
+I investigate security incidents, validate detections, and analyze SIEM and endpoint telemetry across hands-on security labs.
 
-My home lab simulates realistic attack scenarios with detections mapped to MITRE ATT&CK frameworks.
+I’ve built **16+ cybersecurity labs** covering SIEM, EDR, Active Directory, IDS/IPS, threat hunting, phishing analysis, detection engineering, and incident response.
 
-Built 16+ cybersecurity labs covering Active Directory, SIEM, endpoint monitoring, IDS/IPS, threat hunting, phishing investigations, detection engineering, and incident response.
+My labs include **real Internet attack data as well as controlled attack simulations**, with investigations mapped to MITRE ATT&CK techniques.
 
-**Lab Workflow:**  
+**Lab Workflow:**
 `Attacker VM → Target VM → Sysmon / Suricata → SIEM → Alert Validation & Investigation`
 
 ---
